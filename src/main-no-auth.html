@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Главная страница
+    </title>
+    <link href="css/libs.css" rel="stylesheet">
+    <link href="css/styles.css" rel="stylesheet">
+  </head>
+  <body>
+    <!-- Header start-->
+    <header class="header">
+      <div class="header-wrapper"><a class="header__logo" href="#" style="background-image: url(pictures/header__logo.png);"></a>
+        <div class="header-actions">
+          <div class="header__login"><i class="fa fa-user-o"></i>Вход</div>
+          <div class="header__registration"><i class="fa fa-user-plus"></i>Регистрация</div>
+        </div>
+        <form class="header-search">
+          <label class="header-search__label"><i class="fa fa-search"></i>
+            <input class="header-search__input" type="search" placeholder="Найти интерес" name="search">
+          </label>
+          <button class="header-search__button">Найти</button>
+        </form>
+      </div>
+    </header>
+    <!-- Header 	END-->
+    <div class="wrapper">
+      <!--MENU START-->
+      <div class="menu">
+        <div class="menu-list"><a class="menu__link menu__link_users menu__link_disabled" href="#"><span class="menu__icon"></span>Пользователи</a><a class="menu__link menu__link_interests menu__link_disabled" href="#"><span class="menu__icon"></span>Интересы</a><a class="menu__link menu__link_groups menu__link_disabled" href="#"><span class="menu__icon"></span>Группы</a><a class="menu__link menu__link_events" href="#"><span class="menu__icon"></span>Мероприятия</a><a class="menu__link menu__link_learn" href="#"><span class="menu__icon"></span>Обучение</a><a class="menu__link menu__link_board" href="#"><span class="menu__icon"></span>Доска объявлений</a><a class="menu__link menu__link_photos menu__link_disabled" href="#"><span class="menu__icon"></span>Фото</a><a class="menu__link menu__link_videos menu__link_disabled" href="#"><span class="menu__icon"></span>Видео</a><a class="menu__link menu__link_music menu__link_disabled" href="#"><span class="menu__icon"></span>Музыка</a><a class="menu__link menu__link_games menu__link_disabled" href="#"><span class="menu__icon"></span>Игры</a></div><a class="menu-ads" href="#" style="background-image: url(pictures/banner-left.jpg);"></a>
+        <div class="menu-bottom"><a class="menu-bottom__link" href="#">Реклама</a><a class="menu-bottom__link" href="#">   Правила</a><a class="menu-bottom__link" href="#">Помощь</a><a class="menu-bottom__link" href="#">О ресурсе</a><a class="menu-bottom__link" href="#">Блог</a><a class="menu-bottom__link" href="#">Разработчикам</a></div>
+      </div>
+      <!--MENU END-->
+      <div class="center-block">
+        <!--Интересное в сети START-->
+        <div class="interesting">
+          <div class="interesting__caption">Интересное в сети</div>
+          <div class="interesting-wrapper"><a class="interesting-item" href="#">
+              <div class="interesting-item__image" style="background-image: url(pictures/interesting-1.jpg);"></div>
+              <div class="interesting-item__text">
+                <p>Путин поручил снизить долги регионов</p>
+              </div></a><a class="interesting-item" href="#">
+              <div class="interesting-item__image" style="background-image: url(pictures/interesting-2.jpg);"></div>
+              <div class="interesting-item__text">
+                <p>Путин поручил снизить долги регионов</p>
+              </div></a><a class="interesting-item" href="#">
+              <div class="interesting-item__image" style="background-image: url(pictures/interesting-3.jpg);"></div>
+              <div class="interesting-item__text">
+                <p>Путин поручил снизить долги регионов</p>
+              </div></a><a class="interesting-item" href="#">
+              <div class="interesting-item__image" style="background-image: url(pictures/interesting-4.jpg);"></div>
+              <div class="interesting-item__text">
+                <p>Путин поручил снизить долги регионов</p>
+              </div></a><a class="interesting-item" href="#">
+              <div class="interesting-item__image" style="background-image: url(pictures/interesting-5.jpg);"></div>
+              <div class="interesting-item__text">
+                <p>Путин поручил снизить долги регионов</p>
+              </div></a><a class="interesting-item" href="#">
+              <div class="interesting-item__image" style="background-image: url(pictures/interesting-6.jpg);"></div>
+              <div class="interesting-item__text">
+                <p>Путин поручил снизить долги регионов</p>
+              </div></a></div>
+        </div>
+        <!--Интересное в сети END-->
+        <div class="main-forms clearfix">
+          <div class="main-forms-container">
+            <!--FORM-LOGIN START-->
+            <form class="form-login">
+              <div class="form-login__caption">Вход</div>
+              <label class="form-login__label">
+                <input class="form-login__input" type="email" name="email" placeholder="Ваша почта">
+              </label>
+              <label class="form-login__label">
+                <input class="form-login__input" type="password" name="password" placeholder="Пароль ">
+              </label>
+              <div class="text-center">
+                <button class="form-login__button"><i class="fa fa-user-o"></i>войти</button>
+              </div>
+            </form>
+            <!--FORM-LOGIN END-->
+          </div>
+          <div class="main-forms-container">
+            <!--FORM-registration START-->
+            <form class="form-login form-registration">
+              <div class="form-login__caption">Регистрация</div>
+              <label class="form-login__label">
+                <input class="form-login__input" type="text" name="name" placeholder="Ваше имя">
+              </label>
+              <label class="form-login__label">
+                <input class="form-login__input" type="text" name="city" placeholder="Ваш город " data-autocomplete="ajax/cities.json">
+              </label>
+              <label class="form-login__label">
+                <input class="form-login__input" type="text" name="date" placeholder="Дата рождения" data-datepicker>
+              </label>
+              <label class="form-login__label">
+                <input class="form-login__input form-login__input_small-text" type="text" name="email" placeholder="Номер телефона или эл.почта" autocomplete="off">
+              </label>
+              <label class="form-login__label">
+                <input class="form-login__input" type="password" name="password" placeholder="Пароль ">
+              </label>
+              <div class="text-center">
+                <button class="form-login__button"><i class="fa fa-user-plus"></i>создать аккаунт</button>
+              </div>
+            </form>
+            <div class="registration-socials">Создать с помощью:<a class="registration-socials__link registration-socials__link_google-plus" href="#"></a><a class="registration-socials__link registration-socials__link_twitter" href="#"></a><a class="registration-socials__link registration-socials__link_vkontakte" href="#"></a><a class="registration-socials__link registration-socials__link_facebook" href="#"></a><a class="registration-socials__link registration-socials__link_yandex" href="#"></a></div>
+            <!--FORM-registration END-->
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="js/libs.js"></script>
+    <script src="js/scripts.js"></script>
+  </body>
+</html>

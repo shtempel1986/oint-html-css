@@ -1,0 +1,12 @@
+
+mixin image(src)
+	span.img-bg(style="background-image: url(pictures/"+src+")")
+
+doctype html
+html(lang="ru")
+	head
+		include /blocks/head
+	body
+		block content
+		script(src="js/libs.js")
+		script(src="js/scripts.js")

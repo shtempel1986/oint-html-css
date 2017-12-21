@@ -1,0 +1,84 @@
+.menu
+	padding: 15px 18px 15px 17px
+	border-right: 1px solid #e3e3e3
+	&-list
+		display: flex
+		flex-direction: column
+	&__link
+		line-height: 35px
+		color: #333
+		font-weight: 500
+		font-size: 16px
+		&:hover
+			background-color: #eee
+			color: #333
+			text-decoration: none
+		&_disabled
+			color: #c4c4c4
+			cursor: default
+			pointer-events: none
+	&__icon
+		width: 26px
+		display: inline-block
+		height: 22px
+		background-image: url(../../img/menu-icons.png)
+		background-position: -13px -4px
+		vertical-align: middle
+
+.menu__link
+	&_interests
+		.menu__icon
+			background-position: -13px -39px
+	&_groups
+		.menu__icon
+			background-position: -13px -74px
+
+	&_events
+		.menu__icon
+			background-position: -13px -108px
+
+	&_learn
+		.menu__icon
+			background-position: -13px -143px
+
+	&_photos
+		.menu__icon
+			background-position: -13px -213px
+
+	&_videos
+		.menu__icon
+			background-position: -13px -247px
+
+	&_music
+		.menu__icon
+			background-position: -13px -279px
+
+	&_games
+		.menu__icon
+			background-position: -13px -315px
+
+	&_board
+		.menu__icon
+			background-position: -13px -178px
+
+.menu-ads
+	margin-top: 15px
+	margin-bottom: 15px
+	display: block
+	width: 170px
+	height: 170px
+	background-position: center
+	-webkit-background-size: contain
+	background-size: contain
+
+.menu-bottom
+	width: 170px
+	&__link
+		color: #888888
+		font-size: 11px
+		display: inline-block
+		margin-right: 6px
+		&:hover
+			color: #888
+		&:last-child
+			margin-right: 0

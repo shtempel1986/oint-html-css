@@ -1,0 +1,32 @@
+//FORM-registration START
+
+form.form-login.form-registration
+	.form-login__caption Регистрация
+	label.form-login__label
+		input.form-login__input(type="text" name="name" placeholder="Ваше имя")
+	label.form-login__label
+		input.form-login__input(type="text" name="city" placeholder="Ваш город " data-autocomplete="ajax/cities.json")
+	label.form-login__label
+		input.form-login__input(type="text" name="date" placeholder="Дата рождения" data-datepicker)
+	label.form-login__label
+		input.form-login__input.form-login__input_small-text(type="text" name="email" placeholder="Номер телефона или эл.почта" autocomplete="off")
+	label.form-login__label
+		input.form-login__input(type="password" name="password" placeholder="Пароль ")
+	.text-center
+		button.form-login__button
+			i.fa.fa-user-plus
+			| создать аккаунт
+.registration-socials Создать с помощью:
+	a(href="#").registration-socials__link.registration-socials__link_google-plus
+	a(href="#").registration-socials__link.registration-socials__link_twitter
+	a(href="#").registration-socials__link.registration-socials__link_vkontakte
+	a(href="#").registration-socials__link.registration-socials__link_facebook
+	a(href="#").registration-socials__link.registration-socials__link_yandex
+
+
+
+
+
+
+
+//FORM-registration END

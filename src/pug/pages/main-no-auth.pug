@@ -1,0 +1,15 @@
+extends /layouts
+block title
+	|Главная страница
+
+block content
+	include /components/header
+	.wrapper
+		include /components/menu
+		.center-block
+			include /components/interesting
+			.main-forms.clearfix
+				.main-forms-container
+					include /components/form-login
+				.main-forms-container
+					include /components/form-registration
