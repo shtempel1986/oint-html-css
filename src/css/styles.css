@@ -39,7 +39,8 @@ label {
   display: flex;
   width: 1190px;
   margin-left: auto;
-  margin-right: auto; }
+  margin-right: auto;
+  margin-bottom: 40px; }
 
 .center-block {
   width: 780px;
@@ -379,8 +380,72 @@ label {
     opacity: .5; }
   .calendar__day_active {
     background-color: #f3792e;
-    color: #fff; }
+    color: #fff;
+    pointer-events: none; }
     .calendar__day_active:hover {
       color: #fff; }
+
+.new-users__caption {
+  margin-top: 15px;
+  margin-bottom: 15px;
+  padding-left: 20px;
+  font-size: 16px;
+  font-weight: 500; }
+
+.new-users__show-all {
+  display: block;
+  line-height: 26px;
+  text-align: center;
+  font-weight: 300;
+  font-size: 13px;
+  border-bottom: 1px solid #e3e3e3;
+  color: #888888; }
+  .new-users__show-all:hover {
+    text-decoration: none;
+    color: #888888; }
+
+.users-item {
+  margin-top: 10px;
+  padding-bottom: 11px;
+  border-bottom: 1px solid #e3e3e3;
+  padding-left: 20px; }
+  .users-item::after {
+    display: table;
+    content: '';
+    clear: both; }
+  .users-item__avatar {
+    margin-top: 3px;
+    display: block;
+    float: left;
+    margin-right: 12px;
+    width: 67px;
+    height: 67px; }
+  .users-item__name {
+    display: block;
+    font-weight: 500;
+    line-height: 17.5px;
+    color: #263d8b; }
+    .users-item__name span {
+      display: block; }
+    .users-item__name:hover {
+      text-decoration: none;
+      color: #263d8b; }
+  .users-item__mutual-friends {
+    display: block;
+    font-size: 12px;
+    font-weight: 300;
+    line-height: 17.5px;
+    color: #888888; }
+    .users-item__mutual-friends:hover {
+      color: #888;
+      text-decoration: none; }
+  .users-item__add {
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 17.5px;
+    color: #888; }
+    .users-item__add:hover {
+      color: #888;
+      text-decoration: none; }
 
 /*# sourceMappingURL=maps/styles.css.map */
