@@ -23,7 +23,8 @@
   font-weight: 300; }
 
 body {
-  font-family: Roboto, Arial, sans-serif; }
+  font-family: Roboto, Arial, sans-serif;
+  color: #333; }
 
 label {
   font-weight: normal; }
@@ -45,6 +46,13 @@ label {
   padding-left: 18px;
   padding-right: 18px;
   border-right: 1px solid #e3e3e3; }
+
+.left-block {
+  width: 206px;
+  border-right: 1px solid #e3e3e3; }
+
+.right-block {
+  width: 206px; }
 
 .main-forms {
   margin-left: -25px; }
@@ -128,8 +136,7 @@ label {
       left: 9px; }
 
 .menu {
-  padding: 15px 18px 15px 17px;
-  border-right: 1px solid #e3e3e3; }
+  padding: 15px 18px 15px 17px; }
   .menu-list {
     display: -webkit-box;
     display: -webkit-flex;
@@ -313,5 +320,67 @@ label {
       background-position: -121px -1px; }
     .registration-socials__link:first-of-type {
       margin-left: 10px; }
+
+.events-aside {
+  border-bottom: 1px solid #e3e3e3; }
+  .events-aside__caption {
+    margin-top: 15px;
+    margin-bottom: 15px;
+    padding-left: 20px;
+    font-weight: 500;
+    font-size: 16px; }
+  .events-aside-calendar {
+    margin-left: 20px;
+    margin-bottom: 15px;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+    border: 1px solid #efefef;
+    -webkit-border-radius: 2px;
+            border-radius: 2px; }
+  .events-aside-group {
+    margin-top: 15px;
+    padding-bottom: 18px;
+    padding-left: 20px;
+    border-bottom: 1px solid #e3e3e3; }
+    .events-aside-group:last-child {
+      border-bottom: none; }
+  .events-aside__date {
+    margin-bottom: 2px;
+    display: block;
+    font-weight: 500;
+    color: #263d8b;
+    line-height: 17.5px; }
+    .events-aside__date:hover {
+      color: #263d8b; }
+  .events-aside__link {
+    display: block;
+    color: #888888;
+    font-size: 12px;
+    line-height: 17.5px; }
+    .events-aside__link:hover {
+      color: #888; }
+
+.calendar__day {
+  width: 14.29%;
+  text-align: center;
+  line-height: 26px;
+  font-weight: 300;
+  font-size: 9px;
+  color: #333; }
+  .calendar__day:hover {
+    color: #333;
+    text-decoration: none; }
+  .calendar__day_other-month {
+    opacity: .5; }
+  .calendar__day_active {
+    background-color: #f3792e;
+    color: #fff; }
+    .calendar__day_active:hover {
+      color: #fff; }
 
 /*# sourceMappingURL=maps/styles.css.map */

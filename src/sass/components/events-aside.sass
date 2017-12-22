@@ -1,0 +1,55 @@
+.events-aside
+	border-bottom: 1px solid #e3e3e3
+	&__caption
+		margin-top: 15px
+		margin-bottom: 15px
+		padding-left: 20px
+		font-weight: 500
+		font-size: 16px
+	&-calendar
+		margin-left: 20px
+		margin-bottom: 15px
+		display: flex
+		flex-wrap: wrap
+		border: 1px solid #efefef
+		border-radius: 2px
+	&-group
+		margin-top: 15px
+		padding-bottom: 18px
+		padding-left: 20px
+		border-bottom: 1px solid #e3e3e3
+		&:last-child
+			border-bottom: none
+	&__date
+		margin-bottom: 2px
+		display: block
+		font-weight: 500
+		color: #263d8b
+		line-height: 17.5px
+		&:hover
+			color: #263d8b
+	&__link
+		display: block
+		color: #888888
+		font-size: 12px
+		line-height: 17.5px
+		&:hover
+			color: #888
+
+.calendar__day
+	width: 14.29%
+	text-align: center
+	line-height: 26px
+	font-weight: 300
+	font-size: 9px
+	color: #333
+	&:hover
+		color: #333
+		text-decoration: none
+	&_other-month
+		opacity: .5
+	&_active
+		background-color: #f3792e
+		color: #fff
+		&:hover
+			color: #fff
