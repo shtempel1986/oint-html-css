@@ -39,18 +39,74 @@
 			firstDay: 1,
 			isRTL: false
 		};
-		$.datepicker.setDefaults( $.datepicker.regional[ "ru" ] );
 
+		$.datepicker.setDefaults($.datepicker.regional["ru"]);
 
 		$('[data-datepicker]').datepicker({
 			maxDate: new Date(),
 			selectOtherMonths: true,
-			showOtherMonths:true
+			showOtherMonths: true
 
 		});
 
 //===========================================
 //	datepicker END
+//	=========================================
+
+
+//===========================================
+//	AUTORESIZE TEXTAREAS START
+//	=========================================
+
+		$('.main-feed__textarea').autoResize();
+
+//===========================================
+//	AUTORESIZE TEXTAREAS END
+//	=========================================
+
+		//===========================================
+//	MAIN FEED SCRIPTS START
+//	=========================================
+
+		const MEDIA_RATIO = 0.8491;
+
+		$('.main-feed-add').each(function () {
+			$(this).find('textarea').focus(() => {
+				$(this).addClass('main-feed-add_active');
+			});
+		});
+
+		function feedMediaCalculate() {
+			let $items = $('.main-feed-media');
+			console.log($items);
+
+			$items.each(function () {
+				let $targets = $(this).find('.main-feed-media__item:not(:first-child)');
+				let count = $targets.length;
+				if (!count) {
+					return;
+				}
+
+
+				let width = ($(this).width() - (count - 1) * 6) / count;
+
+				let height = width * MEDIA_RATIO;
+
+				console.log(width, height);
+
+				$targets.css({
+					width: `${width}px`,
+					height: `${height}px`
+				})
+
+			});
+
+		}
+
+		feedMediaCalculate();
+
+//===========================================
+//	MAIN FEED SCRIPTS END
 //	=========================================
 
 
