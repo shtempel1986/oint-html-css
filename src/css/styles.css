@@ -136,6 +136,63 @@ label {
       top: 2px;
       left: 9px; }
 
+.header-user {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center; }
+  .header-user__avatar {
+    display: inline-block;
+    width: 37px;
+    height: 37px;
+    position: relative;
+    margin-right: 14px;
+    -webkit-border-radius: 50%;
+            border-radius: 50%; }
+  .header-user__notice {
+    color: #fff;
+    position: absolute;
+    top: -8px;
+    right: -16px; }
+  .header-user__name {
+    margin-right: 9px;
+    font-weight: 500;
+    color: #fff;
+    font-size: 15px; }
+    .header-user__name:hover {
+      color: #fff;
+      text-decoration: none; }
+  .header-user-points {
+    line-height: 21px;
+    background-color: #da8d44;
+    -webkit-border-radius: 10px;
+            border-radius: 10px;
+    padding-right: 7px; }
+    .header-user-points:hover {
+      text-decoration: none; }
+    .header-user-points__count {
+      margin-right: 2px;
+      display: inline-block;
+      padding-left: 2px;
+      padding-right: 2px;
+      line-height: 19px;
+      border: 1px solid #cd7828;
+      background-color: #fff;
+      -webkit-border-radius: 10px;
+              border-radius: 10px;
+      text-align: center;
+      min-width: 21px;
+      font-size: 13px;
+      color: #f3792e; }
+    .header-user-points__span {
+      color: #fff;
+      font-weight: 500;
+      font-size: 13px; }
+
 .menu {
   padding: 15px 18px 15px 17px; }
   .menu-list {
@@ -165,7 +222,7 @@ label {
     width: 26px;
     display: inline-block;
     height: 22px;
-    background-image: url(../../img/menu-icons.png);
+    background-image: url(../img/menu-icons.png);
     background-position: -13px -4px;
     vertical-align: middle; }
 
@@ -295,6 +352,7 @@ label {
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
+  white-space: nowrap;
   padding-left: 25px;
   padding-right: 20px;
   -webkit-box-align: center;
@@ -309,7 +367,7 @@ label {
     display: inline-block;
     width: 27px;
     height: 26px;
-    background: url(../../img/sosials__links.png);
+    background: url(../img/sosials__links.png);
     background-position: -3px -1px; }
     .registration-socials__link_twitter {
       background-position: -32px -1px; }
@@ -367,7 +425,7 @@ label {
       color: #888; }
 
 .calendar__day {
-  width: 14.29%;
+  width: 14.27%;
   text-align: center;
   line-height: 26px;
   font-weight: 300;
