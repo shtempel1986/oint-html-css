@@ -167,7 +167,8 @@ label {
       color: #fff;
       text-decoration: none; }
   .header-user-points {
-    line-height: 21px;
+    line-height: 19px;
+    height: 21px;
     background-color: #da8d44;
     -webkit-border-radius: 10px;
             border-radius: 10px;
@@ -175,6 +176,7 @@ label {
     .header-user-points:hover {
       text-decoration: none; }
     .header-user-points__count {
+      position: relative;
       margin-right: 2px;
       display: inline-block;
       padding-left: 2px;
@@ -209,7 +211,8 @@ label {
     line-height: 35px;
     color: #333;
     font-weight: 500;
-    font-size: 16px; }
+    font-size: 16px;
+    position: relative; }
     .menu__link:hover {
       background-color: #eee;
       color: #333;
@@ -225,12 +228,29 @@ label {
     background-image: url(../img/menu-icons.png);
     background-position: -13px -4px;
     vertical-align: middle; }
+  .menu__count {
+    position: absolute;
+    right: 0;
+    top: 6px;
+    font-size: 12px;
+    color: #f3792e;
+    background-color: #e3e3e3;
+    line-height: 23px;
+    min-width: 23px;
+    text-align: center;
+    padding-left: 3px;
+    padding-right: 3px;
+    -webkit-border-radius: 12px;
+            border-radius: 12px; }
 
 .menu__link_interests .menu__icon {
   background-position: -13px -39px; }
 
+.menu__link_friends .menu__icon {
+  background-position: -13px -39px; }
+
 .menu__link_groups .menu__icon {
-  background-position: -13px -74px; }
+  background-position: -13px -108px; }
 
 .menu__link_events .menu__icon {
   background-position: -13px -108px; }
@@ -239,19 +259,22 @@ label {
   background-position: -13px -143px; }
 
 .menu__link_photos .menu__icon {
-  background-position: -13px -213px; }
-
-.menu__link_videos .menu__icon {
   background-position: -13px -247px; }
 
-.menu__link_music .menu__icon {
+.menu__link_videos .menu__icon {
   background-position: -13px -279px; }
 
-.menu__link_games .menu__icon {
+.menu__link_music .menu__icon {
   background-position: -13px -315px; }
+
+.menu__link_games .menu__icon {
+  background-position: -13px -350px; }
 
 .menu__link_board .menu__icon {
   background-position: -13px -178px; }
+
+.menu__link_messages .menu__icon {
+  background-position: -13px -74px; }
 
 .menu-ads {
   margin-top: 15px;
@@ -505,5 +528,45 @@ label {
     .users-item__add:hover {
       color: #888;
       text-decoration: none; }
+
+.my-interests {
+  padding-left: 17px;
+  padding-right: 18px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #e3e3e3; }
+  .my-interests__caption {
+    font-size: 16px;
+    margin-top: 15px;
+    margin-bottom: 6px;
+    font-weight: 500; }
+  .my-interests-item {
+    display: block;
+    padding-right: 20px;
+    line-height: 26px;
+    font-size: 13px;
+    font-weight: 300;
+    color: #333;
+    position: relative; }
+    .my-interests-item:hover {
+      color: #333;
+      background-color: #f0f0f0;
+      text-decoration: none; }
+    .my-interests-item__count {
+      position: absolute;
+      top: 0;
+      right: 0;
+      color: #f3792e; }
+  .my-interests__link {
+    margin-top: 2px;
+    margin-bottom: 2px;
+    display: block;
+    color: #333;
+    font-weight: 500;
+    line-height: 26px;
+    font-size: 13px; }
+    .my-interests__link:hover {
+      color: #333;
+      text-decoration: none;
+      background-color: #f0f0f0; }
 
 /*# sourceMappingURL=maps/styles.css.map */

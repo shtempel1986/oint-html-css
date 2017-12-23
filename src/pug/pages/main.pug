@@ -6,14 +6,11 @@ block content
 	include /components/header-with-user
 	.wrapper
 		.left-block
-			include /components/menu
+			include /components/my-interests
+			include /components/menu-auth
 		main.center-block
 			include /components/interesting
-			.main-forms.clearfix
-				.main-forms-container
-					include /components/form-login
-				.main-forms-container
-					include /components/form-registration
+
 		.right-block
 			include /components/events-aside
 			include /components/new-users

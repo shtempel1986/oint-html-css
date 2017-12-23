@@ -8,6 +8,7 @@
 		color: #333
 		font-weight: 500
 		font-size: 16px
+		position: relative
 		&:hover
 			background-color: #eee
 			color: #333
@@ -23,14 +24,30 @@
 		background-image: url(../img/menu-icons.png)
 		background-position: -13px -4px
 		vertical-align: middle
+	&__count
+		position: absolute
+		right: 0
+		top: 6px
+		font-size: 12px
+		color: #f3792e
+		background-color: #e3e3e3
+		line-height: 23px
+		min-width: 23px
+		text-align: center
+		padding-left: 3px
+		padding-right: 3px
+		border-radius: 12px
 
 .menu__link
 	&_interests
 		.menu__icon
 			background-position: -13px -39px
+	&_friends
+		.menu__icon
+			background-position: -13px -39px
 	&_groups
 		.menu__icon
-			background-position: -13px -74px
+			background-position: -13px -108px
 
 	&_events
 		.menu__icon
@@ -42,23 +59,27 @@
 
 	&_photos
 		.menu__icon
-			background-position: -13px -213px
+			background-position: -13px -247px
 
 	&_videos
 		.menu__icon
-			background-position: -13px -247px
+			background-position: -13px -279px
 
 	&_music
 		.menu__icon
-			background-position: -13px -279px
+			background-position: -13px -315px
 
 	&_games
 		.menu__icon
-			background-position: -13px -315px
+			background-position: -13px -350px
 
 	&_board
 		.menu__icon
 			background-position: -13px -178px
+
+	&_messages
+		.menu__icon
+			background-position: -13px -74px
 
 .menu-ads
 	margin-top: 15px
