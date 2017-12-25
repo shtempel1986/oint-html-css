@@ -1,0 +1,94 @@
+.user-info
+	padding-right: 23px
+	padding-left: 18px
+	&__name
+		position: relative
+		font-size: 18px
+		font-weight: 500
+		margin-top: 15px
+		margin-bottom: 4px
+		&_online
+			&::after
+				position: absolute
+				content: ''
+				display: block
+				top: 0
+				right: -13px
+				width: 13px
+				height: 13px
+				border-radius: 50%
+				background-color: #f3792e
+	&__status
+		display: block
+		font-size: 12px
+		font-style: italic
+		font-weight: 300
+		color: #888
+		&:hover
+			text-decoration: none
+			color: #888
+	&__avatar
+		width: 164px
+		height: 164px
+		margin-top: 15px
+		margin-bottom: 14px
+		border: 2px solid #e3e3e3
+	&-actions
+		&__button
+			display: flex
+			align-items: center
+			justify-content: center
+			height: 32px
+			text-align: center
+			background-color: #263d8b
+			font-weight: 300
+			color: #fff
+			margin-bottom: 14px
+			&:hover
+				text-decoration: none
+				color: #fff
+			&:focus
+				text-decoration: none
+				color: #fff
+	&-general
+		margin-left: -18px
+		padding-left: 18px
+		margin-right: -23px
+		padding-right: -23px
+		line-height: 24px
+		font-weight: 300
+		margin-bottom: 15px
+		padding-bottom: 13px
+		border-bottom: 1px solid #e3e3e3
+		&-item
+			&__key
+				color: #888
+				display: inline-block
+				&::after
+					content: ' '
+					white-space: pre
+			&__value
+				display: inline-block
+				color: #263d8b
+				&:hover
+					color: #263d8b
+	&-secondary
+		margin-left: -18px
+		padding-left: 18px
+		margin-right: -23px
+		padding-right: -23px
+		line-height: 24px
+		font-weight: 300
+		margin-bottom: 15px
+		padding-bottom: 13px
+		border-bottom: 1px solid #e3e3e3
+		.user-info-general-item__value
+			display: block
+			&::before
+				content: '- '
+			&_more
+				font-weight: 500
+				&::before
+					content: ''
+				.fa
+					margin-left: 4px

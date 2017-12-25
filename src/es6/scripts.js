@@ -87,7 +87,6 @@
 					return;
 				}
 
-
 				let width = ($(this).width() - (count - 1) * 6) / count;
 
 				let height = width * MEDIA_RATIO;

@@ -1,0 +1,14 @@
+extends /layouts
+block title
+	| Александр Морган
+
+block content
+	include /components/header-with-user
+	.wrapper
+		.left-block
+			include /components/user_page_info
+		main.center-block
+
+		.right-block
+
+			include /components/possible-friends
