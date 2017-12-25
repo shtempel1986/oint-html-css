@@ -1,0 +1,32 @@
+.user-menu
+	display: flex
+	flex-wrap: wrap
+	justify-content: space-between
+	margin-top: 30px
+	margin-left: -12px
+	margin-right: -12px
+	&-item
+		width: 99px
+		height: 99px
+		margin-left: 12px
+		margin-right: 12px
+		margin-bottom: 25px
+		padding-top: 25px
+		font-weight: 300
+		text-align: center
+		color: #263d8b
+		background-color: #e3e3e3
+		&:hover
+			color: #263d8b
+			text-decoration: none
+		&:focus
+			text-decoration: none
+		&__count
+			font-size: 24px
+			font-weight: 500
+		&__name
+			&_new
+				color: #f3792e
+				span
+					&::before
+						content: ' + '
