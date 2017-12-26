@@ -1,5 +1,7 @@
 'use strict';
 
+var feedMediaCalculate = void 0;
+
 (function ($) {
 
 		$(function () {
@@ -78,9 +80,9 @@
 						});
 				});
 
-				function feedMediaCalculate() {
+				feedMediaCalculate = function feedMediaCalculate() {
+
 						var $items = $('.main-feed-media');
-						console.log($items);
 
 						$items.each(function () {
 								var $targets = $(this).find('.main-feed-media__item:not(:first-child)');
@@ -93,14 +95,12 @@
 
 								var height = width * MEDIA_RATIO;
 
-								console.log(width, height);
-
 								$targets.css({
 										width: width + 'px',
 										height: height + 'px'
 								});
 						});
-				}
+				};
 
 				feedMediaCalculate();
 

@@ -1,3 +1,5 @@
+let feedMediaCalculate;
+
 (function ($) {
 
 
@@ -76,9 +78,9 @@
 			});
 		});
 
-		function feedMediaCalculate() {
+		 feedMediaCalculate = function () {
+
 			let $items = $('.main-feed-media');
-			console.log($items);
 
 			$items.each(function () {
 				let $targets = $(this).find('.main-feed-media__item:not(:first-child)');
@@ -91,8 +93,6 @@
 
 				let height = width * MEDIA_RATIO;
 
-				console.log(width, height);
-
 				$targets.css({
 					width: `${width}px`,
 					height: `${height}px`
@@ -100,7 +100,7 @@
 
 			});
 
-		}
+		};
 
 		feedMediaCalculate();
 

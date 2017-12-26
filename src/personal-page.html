@@ -6,7 +6,7 @@
     <title>Александр Морган
     </title>
     <link href="css/libs.css" rel="stylesheet">
-    <link href="../../ointeres/css/styles.css" rel="stylesheet">
+    <link href="css/styles.css" rel="stylesheet">
   </head>
   <body>
     <!-- Header start-->
@@ -27,7 +27,7 @@
         <!--USER INFO START-->
         <div class="user-info">
           <div class="user-info__name user-info__name_online">Александр Морган</div><a class="user-info__status" href="#">изменить статус</a>
-          <div class="user-info__avatar" style="background-image: url(../../ointeres/pictures/avatar-1.jpg);"></div>
+          <div class="user-info__avatar" style="background-image: url(pictures/avatar-1.jpg);"></div>
           <div class="user-info-actions"><a class="user-info-actions__button" href="#">Редактировать</a></div>
           <div class="user-info-general">
             <div class="user-info-general-item">
@@ -53,10 +53,18 @@
             <div class="user-info-general-item__key">Навыки, умения</div><a class="user-info-general-item__value" href="#">Ремонт</a><a class="user-info-general-item__value" href="#">Дизайн</a><a class="user-info-general-item__value" href="#">Дайвинг</a><a class="user-info-general-item__value" href="#">Туризм</a><a class="user-info-general-item__value" href="#">Маркетинг</a><a class="user-info-general-item__value user-info-general-item__value_more" href="#">Еще<i class="fa fa-angle-down"></i></a>
           </div>
           <div class="user-info-general">
-            <div class="user-info-general-item__key">Телефон:</div><a class="user-info-general-item__value" href="#">+7 495 123456</a>
-            <div class="user-info-general-item__key">Viber:</div><a class="user-info-general-item__value" href="#">987654321</a>
-            <div class="user-info-general-item__key">Skype:</div><a class="user-info-general-item__value" href="#">admin</a>
-            <div class="user-info-general-item__key">WhatsApp:</div><a class="user-info-general-item__value" href="#">987654321</a>
+            <div class="user-info-general-item">
+              <div class="user-info-general-item__key">Телефон:</div><a class="user-info-general-item__value" href="#">+7 495 123456</a>
+            </div>
+            <div class="user-info-general-item">
+              <div class="user-info-general-item__key">Viber:</div><a class="user-info-general-item__value" href="#">987654321</a>
+            </div>
+            <div class="user-info-general-item">
+              <div class="user-info-general-item__key">Skype:</div><a class="user-info-general-item__value" href="#">admin</a>
+            </div>
+            <div class="user-info-general-item">
+              <div class="user-info-general-item__key">WhatsApp:</div><a class="user-info-general-item__value" href="#">987654321</a>
+            </div>
           </div>
         </div>
         <!--USER info -END-->
@@ -89,7 +97,7 @@
             <div class="user-menu-item__count">22</div>
             <div class="user-menu-item__name">Сообщения</div></a></div>
         <!-- USER MENU END-->
-        <!--MAIN FEED START-->
+        <!--WALL START-->
         <div class="main-feed">
           <div class="main-feed-add">
             <form class="main-feed-form">
@@ -119,24 +127,40 @@
               <div class="main-feed-caption clearfix"><img class="main-feed__avatar" src="pictures/user-avatar.jpg" alt="user">
                 <div class="main-feed__name">Александр Морган</div>
                 <div class="main-feed__date">12 авг в 1:13</div>
-                <div class="main-feed-item__actions-button"></div>
+                <div class="main-feed-item__actions-button">
+                  <div class="main-feed-item-actions"><a class="main-feed-item-actions__item main-feed-item-actions__item_stick" href="#">Закрепить запись<span class="main-feed-item-actions__icon"></span></a><a class="main-feed-item-actions__item main-feed-item-actions__item_delete" href="#">Удалить запись<span class="main-feed-item-actions__icon"></span></a><a class="main-feed-item-actions__item main-feed-item-actions__item_edit" href="#">Редактировать запись<span class="main-feed-item-actions__icon"></span></a></div>
+                </div>
               </div>
               <div class="main-feed-content">
                 <h3>Lorem ipsum dolor sit amet.</h3>
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad aliquam aperiam atque aut corporis culpa<br>deleniti dolor dolore dolorum ea eius enim esse excepturi facere in minima, minus molestias nam quia						quibusdam, rerum sed sint suscipit tempora unde ut voluptatum? A cumque doloribus error molestias officia						repudiandae sapiente sit vitae? Dignissimos doloribus ex fugiat nesciunt provident reiciendis rerum saepe						sequi?</p>
               </div>
-              <div class="main-feed-media"><a class="main-feed-media__item" href="#"><img src="pictures/content-1.jpg"></a><a class="main-feed-media__item" href="#" style="background-image:url(pictures/content-2.jpg);"></a><a class="main-feed-media__item" href="#" style="background-image:url(pictures/content-3.jpg);"></a><a class="main-feed-media__item" href="#" style="background-image:url(pictures/content-4.jpg);"></a></div>
+              <div class="main-feed-media"><a class="main-feed-media__item" href="#"><img src="pictures/content-1.jpg"></a><a class="main-feed-media__item" href="#" style="background-image:url(pictures/content-2.jpg);"></a><a class="main-feed-media__item" href="#" style="background-image:url(pictures/content-3.jpg);"></a><a class="main-feed-media__item" href="#" style="background-image:url(pictures/content-4.jpg);"></a><a class="main-feed-media__item" href="#" style="background-image:url(pictures/content-4.jpg);"></a></div>
               <div class="main-feed-bottom">
-                <div class="main-feed-bottom__item main-feed-bottom__item_comments">Комментировать<span>12</span></div>
-                <div class="main-feed-bottom__item main-feed-bottom__item_share"><span>8</span></div>
-                <div class="main-feed-bottom__item main-feed-bottom__item_like"><span>54</span></div>
+                <div class="main-feed-bottom__item main-feed-bottom__item_comments">Комментировать<span>12</span>
+                  <div class="main-feed-bottom-users-list"><a class="main-feed-bottom-users-list__item" href="#" style="background-image:url(pictures/user-avatar.jpg);"></a><a class="main-feed-bottom-users-list__item" href="#">А</a><a class="main-feed-bottom-users-list__item" href="#" style="background-image:url(pictures/user-avatar.jpg);"></a><a class="main-feed-bottom-users-list__item" href="#">Р</a><a class="main-feed-bottom-users-list__item" href="#">Л</a>
+                    <div class="main-feed-bottom-users-list__add">+5</div>
+                  </div>
+                </div>
+                <div class="main-feed-bottom__item main-feed-bottom__item_share"><span>8</span>
+                  <div class="main-feed-bottom-users-list"><a class="main-feed-bottom-users-list__item" href="#" style="background-image:url(pictures/user-avatar.jpg);"></a><a class="main-feed-bottom-users-list__item" href="#">А</a><a class="main-feed-bottom-users-list__item" href="#" style="background-image:url(pictures/user-avatar.jpg);"></a><a class="main-feed-bottom-users-list__item" href="#">Р</a><a class="main-feed-bottom-users-list__item" href="#">Л</a>
+                    <div class="main-feed-bottom-users-list__add">+5</div>
+                  </div>
+                </div>
+                <div class="main-feed-bottom__item main-feed-bottom__item_like"><span>54</span>
+                  <div class="main-feed-bottom-users-list"><a class="main-feed-bottom-users-list__item" href="#" style="background-image:url(pictures/user-avatar.jpg);"></a><a class="main-feed-bottom-users-list__item" href="#">А</a><a class="main-feed-bottom-users-list__item" href="#" style="background-image:url(pictures/user-avatar.jpg);"></a><a class="main-feed-bottom-users-list__item" href="#">Р</a><a class="main-feed-bottom-users-list__item" href="#">Л</a>
+                    <div class="main-feed-bottom-users-list__add">+5</div>
+                  </div>
+                </div>
               </div>
             </div>
             <div class="main-feed-item">
               <div class="main-feed-caption clearfix"><img class="main-feed__avatar" src="pictures/user-avatar.jpg" alt="user">
                 <div class="main-feed__name">Александр Морган</div>
                 <div class="main-feed__date">12 авг в 1:13</div>
-                <div class="main-feed-item__actions-button"></div>
+                <div class="main-feed-item__actions-button">
+                  <div class="main-feed-item-actions"><a class="main-feed-item-actions__item main-feed-item-actions__item_stick" href="#">Закрепить запись<span class="main-feed-item-actions__icon"></span></a><a class="main-feed-item-actions__item main-feed-item-actions__item_delete" href="#">Удалить запись<span class="main-feed-item-actions__icon"></span></a><a class="main-feed-item-actions__item main-feed-item-actions__item_edit" href="#">Редактировать запись<span class="main-feed-item-actions__icon"></span></a></div>
+                </div>
               </div>
               <div class="main-feed-content">
                 <h3>Lorem ipsum dolor sit amet.</h3>
@@ -144,29 +168,41 @@
               </div>
               <div class="main-feed-media"><a class="main-feed-media__item" href="#"><img src="pictures/content-5.jpg"></a></div>
               <div class="main-feed-bottom">
-                <div class="main-feed-bottom__item main-feed-bottom__item_comments">Комментировать<span>12</span></div>
-                <div class="main-feed-bottom__item main-feed-bottom__item_share"><span>8</span></div>
-                <div class="main-feed-bottom__item main-feed-bottom__item_like"><span>54</span></div>
+                <div class="main-feed-bottom__item main-feed-bottom__item_comments">Комментировать<span>12</span>
+                  <div class="main-feed-bottom-users-list"><a class="main-feed-bottom-users-list__item" href="#" style="background-image:url(pictures/user-avatar.jpg);"></a><a class="main-feed-bottom-users-list__item" href="#">А</a><a class="main-feed-bottom-users-list__item" href="#" style="background-image:url(pictures/user-avatar.jpg);"></a><a class="main-feed-bottom-users-list__item" href="#">Р</a><a class="main-feed-bottom-users-list__item" href="#">Л</a>
+                    <div class="main-feed-bottom-users-list__add">+5</div>
+                  </div>
+                </div>
+                <div class="main-feed-bottom__item main-feed-bottom__item_share"><span>8</span>
+                  <div class="main-feed-bottom-users-list"><a class="main-feed-bottom-users-list__item" href="#" style="background-image:url(pictures/user-avatar.jpg);"></a><a class="main-feed-bottom-users-list__item" href="#">А</a><a class="main-feed-bottom-users-list__item" href="#" style="background-image:url(pictures/user-avatar.jpg);"></a><a class="main-feed-bottom-users-list__item" href="#">Р</a><a class="main-feed-bottom-users-list__item" href="#">Л</a>
+                    <div class="main-feed-bottom-users-list__add">+5</div>
+                  </div>
+                </div>
+                <div class="main-feed-bottom__item main-feed-bottom__item_like"><span>54</span>
+                  <div class="main-feed-bottom-users-list"><a class="main-feed-bottom-users-list__item" href="#" style="background-image:url(pictures/user-avatar.jpg);"></a><a class="main-feed-bottom-users-list__item" href="#">А</a><a class="main-feed-bottom-users-list__item" href="#" style="background-image:url(pictures/user-avatar.jpg);"></a><a class="main-feed-bottom-users-list__item" href="#">Р</a><a class="main-feed-bottom-users-list__item" href="#">Л</a>
+                    <div class="main-feed-bottom-users-list__add">+5</div>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
         </div>
-        <!--MAIN FEED END-->
+        <!--WALL END-->
       </main>
-    </div>
-    <div class="right-block">
-      <!--NEW USERS START-->
-      <aside class="new-users">
-        <div class="new-users__caption">Возможно знакомы</div>
-        <div class="users-wrapper">
-          <div class="users-item"><a class="users-item__avatar" href="#" style="background-image: url(pictures/new-friend-1.jpg);"></a><a class="users-item__name" href="#"><span>Алексей</span><span>Сергеев</span></a><a class="users-item__mutual-friends" href="#">15 общих друзей</a><a class="users-item__add" href="#">+ Добавить</a></div>
-          <div class="users-item"><a class="users-item__avatar" href="#" style="background-image: url(pictures/new-friend-2.jpg);"></a><a class="users-item__name" href="#"><span>Андрей</span><span>Криворогов</span></a><a class="users-item__mutual-friends" href="#">7 общих друзей</a><a class="users-item__add" href="#">+ Добавить</a></div>
-          <div class="users-item"><a class="users-item__avatar" href="#" style="background-image: url(pictures/new-friend-3.jpg);"></a><a class="users-item__name" href="#"><span>Василий</span><span>Шиповалов</span></a><a class="users-item__mutual-friends" href="#">3 общих друзей</a><a class="users-item__add" href="#">+ Добавить</a></div>
-          <div class="users-item"><a class="users-item__avatar" href="#" style="background-image: url(pictures/new-friend-4.jpg);"></a><a class="users-item__name" href="#"><span>Денис</span><span>Васильев</span></a><a class="users-item__mutual-friends" href="#">2 общих друзей</a><a class="users-item__add" href="#">+ Добавить</a></div>
-          <div class="users-item"><a class="users-item__avatar" href="#" style="background-image: url(pictures/new-friend-5.jpg);"></a><a class="users-item__name" href="#"><span>Иван</span><span>Филатов</span></a><a class="users-item__mutual-friends" href="#">5 общих друзей</a><a class="users-item__add" href="#">+ Добавить</a></div>
-        </div><a class="new-users__show-all" href="#">Показать всех</a>
-      </aside>
-      <!--NEW USERS END-->
+      <div class="right-block">
+        <!--NEW USERS START-->
+        <aside class="new-users">
+          <div class="new-users__caption">Возможно знакомы</div>
+          <div class="users-wrapper">
+            <div class="users-item"><a class="users-item__avatar" href="#" style="background-image: url(pictures/new-friend-1.jpg);"></a><a class="users-item__name" href="#"><span>Алексей</span><span>Сергеев</span></a><a class="users-item__mutual-friends" href="#">15 общих друзей</a><a class="users-item__add" href="#">+ Добавить</a></div>
+            <div class="users-item"><a class="users-item__avatar" href="#" style="background-image: url(pictures/new-friend-2.jpg);"></a><a class="users-item__name" href="#"><span>Андрей</span><span>Криворогов</span></a><a class="users-item__mutual-friends" href="#">7 общих друзей</a><a class="users-item__add" href="#">+ Добавить</a></div>
+            <div class="users-item"><a class="users-item__avatar" href="#" style="background-image: url(pictures/new-friend-3.jpg);"></a><a class="users-item__name" href="#"><span>Василий</span><span>Шиповалов</span></a><a class="users-item__mutual-friends" href="#">3 общих друзей</a><a class="users-item__add" href="#">+ Добавить</a></div>
+            <div class="users-item"><a class="users-item__avatar" href="#" style="background-image: url(pictures/new-friend-4.jpg);"></a><a class="users-item__name" href="#"><span>Денис</span><span>Васильев</span></a><a class="users-item__mutual-friends" href="#">2 общих друзей</a><a class="users-item__add" href="#">+ Добавить</a></div>
+            <div class="users-item"><a class="users-item__avatar" href="#" style="background-image: url(pictures/new-friend-5.jpg);"></a><a class="users-item__name" href="#"><span>Иван</span><span>Филатов</span></a><a class="users-item__mutual-friends" href="#">5 общих друзей</a><a class="users-item__add" href="#">+ Добавить</a></div>
+          </div><a class="new-users__show-all" href="#">Показать всех</a>
+        </aside>
+        <!--NEW USERS END-->
+      </div>
     </div>
     <script src="js/libs.js"></script>
     <script src="js/scripts.js"></script>

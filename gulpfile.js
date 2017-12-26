@@ -35,7 +35,7 @@ gulp.task('libs',()=>{
 //==========================================================
 
 gulp.task('pug',()=>{
-  return gulp.src('src/pug/pages/*.pug')
+  return gulp.src(['src/pug/pages/*.pug','src/pug/components/*.pug'])
     .pipe(pug({
       pretty: true,
       basedir: 'src/pug'
