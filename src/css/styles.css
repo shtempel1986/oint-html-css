@@ -538,6 +538,21 @@ label {
       color: #888;
       text-decoration: none; }
 
+.users-item__message {
+  color: #888;
+  font-size: 12px; }
+  .users-item__message:hover {
+    color: #888;
+    text-decoration: none; }
+
+.users-item__status {
+  font-size: 12px;
+  font-weight: 500; }
+  .users-item__status_online {
+    color: #d98c43; }
+  .users-item__status_offline {
+    color: #888; }
+
 .my-interests {
   padding-left: 17px;
   padding-right: 18px;
@@ -1001,6 +1016,8 @@ label {
     .user-info-actions__button:focus {
       text-decoration: none;
       color: #fff; }
+    .user-info-actions__button .fa {
+      margin-left: 10px; }
   .user-info-general {
     margin-left: -18px;
     padding-left: 18px;
