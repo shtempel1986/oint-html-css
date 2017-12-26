@@ -1,0 +1,12 @@
+extends /layouts
+block title
+	| Друзья
+
+block content
+	include ../components/header-with-user
+	.wrapper
+		.left-block
+			include ../components/menu-auth
+		main.center-block
+			include ../components/friends_list
+		.right-block

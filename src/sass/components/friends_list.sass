@@ -1,0 +1,86 @@
+.friends-list
+	.main-feed-actions
+		margin-left: -18px
+		margin-right: -18px
+		margin-bottom: 0
+		padding-left: 18px
+		padding-right: 18px
+		border-bottom: 1px solid #e3e3e3
+	.main-feed-tabs
+		&__item
+			margin-top: 5px
+			line-height: 35px
+			height: 37px
+	.main-feed-search
+		margin-top: 5px
+		&__input
+			height: 35px
+			line-height: 35px
+		&__label
+			margin-bottom: 0
+	&-wrapper
+		display: flex
+		flex-wrap: wrap
+		margin-left: -18px
+		margin-right: -18px
+	&-item
+		width: 50%
+		border-bottom: 1px solid #e3e3e3
+		padding: 18px 18px 10px
+		&:nth-child(2n+1)
+			border-right: 1px solid #e3e3e3
+		&__avatar
+			width: 80px
+			height: 80px
+			display: block
+			float: left
+			margin-right: 14px
+			background-size: cover
+			background-position: center
+		&__name
+			margin-top: 3px
+			margin-bottom: 3px
+			display: block
+			font-size: 18px
+			font-weight: 500
+			color: #333
+			&:hover
+				text-decoration: none
+				color: #333
+		&__status
+			margin-bottom: 5px
+			font-size: 13px
+			font-weight: 300
+			&_online
+				color: #f3792e
+			&_offline
+				color: #888
+		&-actions
+			display: flex
+			margin-top: 6px
+			font-size: 13px
+			.fa
+				margin-right: 5px
+		&__message
+			display: inline-block
+			margin-right: 10px
+			color: #333
+			white-space: nowrap
+			&:hover
+				color: #333
+				text-decoration: none
+		&__activity
+			margin-right: 5px
+			color: #263d8b
+			display: inline-block
+			white-space: nowrap
+			&:hover
+				text-decoration: none
+				color: #263d8b
+		&__add
+			display: inline-block
+			white-space: nowrap
+			color: #f3792e
+			&:hover
+				text-decoration: none
+				color: #f3792e
