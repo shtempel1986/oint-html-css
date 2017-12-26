@@ -1196,4 +1196,76 @@ label {
       text-decoration: none;
       color: #f3792e; }
 
+.friends-filter {
+  padding-left: 18px;
+  padding-right: 10px; }
+  .friends-filter__caption {
+    margin-top: 15px;
+    margin-bottom: 15px;
+    font-size: 16px;
+    font-weight: 500; }
+  .friends-filter-item {
+    margin-left: -18px;
+    margin-right: -10px;
+    margin-bottom: 20px;
+    padding-left: 18px;
+    padding-right: 10px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #e3e3e3; }
+  .friends-filter__label {
+    position: relative; }
+  .friends-filter__select {
+    width: 172px;
+    height: 33px;
+    padding-left: 11px;
+    padding-right: 24px;
+    line-height: 31px;
+      line-height--webkit-appearance: none;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+            appearance: none;
+    -webkit-border-radius: 3px;
+            border-radius: 3px;
+    border: 1px solid #e3e3e3;
+    color: #919191;
+    cursor: pointer; }
+    .friends-filter__select-arrow {
+      position: absolute;
+      right: 0;
+      top: 0;
+      width: 26px;
+      height: 30px;
+      background: url(../img/menu-icons.png) no-repeat 0 -840px; }
+  .friends-filter-age {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex; }
+    .friends-filter-age__input {
+      width: 85px;
+      padding-left: 9px;
+      padding-right: 9px;
+      font-size: 12px;
+      height: 32px;
+      line-height: 30px;
+      border: 1px solid #e3e3e3;
+      -webkit-border-radius: 3px 0 0 3px;
+              border-radius: 3px 0 0 3px; }
+    .friends-filter-age__label:nth-child(2) .friends-filter-age__input {
+      -webkit-border-radius: 0 3px 3px 0;
+              border-radius: 0 3px 3px 0;
+      border-left: none; }
+  .friends-filter-sex {
+    margin-top: -7px; }
+  .friends-filter__checkbox {
+    display: block;
+    line-height: 30px;
+    cursor: pointer;
+    font-weight: 500; }
+    .friends-filter__checkbox .fa {
+      color: #919191;
+      margin-right: 20px; }
+    .friends-filter__checkbox input:checked + .fa {
+      color: #263d8b; }
+
 /*# sourceMappingURL=maps/styles.css.map */

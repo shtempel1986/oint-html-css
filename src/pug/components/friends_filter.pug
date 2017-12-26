@@ -1,0 +1,52 @@
+.friends-filter
+	.friends-filter__caption Параметры поиска
+	.friends-filter-item
+		.friends-filter__caption Сортировать
+		label.friends-filter__label
+			select.friends-filter__select
+				option По популярности
+				option По дате регистрации
+			span.friends-filter__select-arrow
+	.friends-filter-item
+		.friends-filter__caption Возраст
+		.friends-filter-age
+			label.friends-filter-age__label
+				input.friends-filter-age__input(placeholder="от")
+			label.friends-filter-age__label
+				input.friends-filter-age__input(placeholder="до")
+	.friends-filter-item
+		.friends-filter__caption Пол
+		.friends-filter-sex
+			label.friends-filter__checkbox
+				input(type="radio" name="sex").hidden
+				i.fa.fa-check-square
+				| Женский
+			label.friends-filter__checkbox
+				input(type="radio" name="sex").hidden
+				i.fa.fa-check-square
+				| Мужской
+			label.friends-filter__checkbox
+				input(type="radio" name="sex" checked="checked").hidden
+				i.fa.fa-check-square
+				| Любой
+	.friends-filter-item
+		.friends-filter__caption Город
+		label.friends-filter__label
+			select.friends-filter__select
+				option По популярности
+				option По дате регистрации
+			span.friends-filter__select-arrow
+	.friends-filter-item
+		.friends-filter__caption Работа
+		label.friends-filter__label
+			select.friends-filter__select
+				option По популярности
+				option По дате регистрации
+			span.friends-filter__select-arrow
+	.friends-filter-item
+		.friends-filter__caption Желания, цели, мечты
+		label.friends-filter__label
+			select.friends-filter__select
+				option По популярности
+				option По дате регистрации
+			span.friends-filter__select-arrow
