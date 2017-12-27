@@ -1,13 +1,16 @@
 extends /layouts
 block title
-	| Группы
+	| Группа
 
 block content
 	include ../components/header-with-user
 	.wrapper
 		.left-block
-			//include ../components/menu-auth
+			include ../components/menu-auth
 		.group-right
-
+			include ../components/group_caption
+			include ../components/group_nav
 			main.center-block
+				include ../components/wall
 			.right-block
+				include ../components/group_users

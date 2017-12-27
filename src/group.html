@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Группы
+    <title>Группа
     </title>
     <link href="css/libs.css" rel="stylesheet">
     <link href="css/styles.css" rel="stylesheet">
@@ -24,11 +24,146 @@
     <!-- Header 	END-->
     <div class="wrapper">
       <div class="left-block">
-        <!--include ../components/menu-auth-->
+        <!--MENU START-->
+        <div class="menu">
+          <div class="menu-list"><a class="menu__link menu__link_users" href="#"><span class="menu__icon"></span>Пользователи</a><a class="menu__link menu__link_friends" href="#"><span class="menu__icon"></span>Друзья<span class="menu__count">10</span></a><a class="menu__link menu__link_messages" href="#"><span class="menu__icon"></span>Сообщения</a><a class="menu__link menu__link_learn" href="#"><span class="menu__icon"></span>Обучение</a><a class="menu__link menu__link_groups" href="#"><span class="menu__icon"></span>Группы<span class="menu__count">14</span></a><a class="menu__link menu__link_board" href="#"><span class="menu__icon"></span>Доска объявлений</a><a class="menu__link menu__link_photos" href="#"><span class="menu__icon"></span>Навыки</a><a class="menu__link menu__link_videos" href="#"><span class="menu__icon"></span>Фото</a><a class="menu__link menu__link_music" href="#"><span class="menu__icon"></span>Музыка</a><a class="menu__link menu__link_games" href="#"><span class="menu__icon"></span>Игры</a></div><a class="menu-ads" href="#" style="background-image: url(pictures/banner-left.jpg);"></a>
+          <div class="menu-bottom"><a class="menu-bottom__link" href="#">Реклама</a><a class="menu-bottom__link" href="#">   Правила</a><a class="menu-bottom__link" href="#">Помощь</a><a class="menu-bottom__link" href="#">О ресурсе</a><a class="menu-bottom__link" href="#">Блог</a><a class="menu-bottom__link" href="#">Разработчикам</a></div>
+        </div>
+        <!--MENU END-->
       </div>
       <div class="group-right">
-        <main class="center-block"></main>
-        <div class="right-block"></div>
+        <div class="group-caption">
+          <div class="group-caption-left">
+            <div class="group-info"><span class="group-info__subject"><i class="fa fa-folder"></i>Живопись</span><span class="group-info__activity"><i class="fa fa-bar-chart"></i>22</span><span class="group-info__members"><i class="fa fa-users"></i>772</span></div>
+          </div>
+          <div class="group-caption-right">
+            <div class="group-caption__name">Клуб Ван Гога</div>
+            <div class="group-caption__description">
+              <p>Эти дома построили за 2 часа, и простоят они целых 300 лет. Сегодняшний стремительный ритм	жизни диктует свои условия и заставляет всех подстраиваться.  Эти дома построили за 2 часа, и простоят они целых 300 лет. Сегодняшний стремительный ритм жизни диктует свои условия и заставляет всех подстраиваться.</p>
+            </div>
+          </div>
+        </div>
+        <div class="group-nav">
+          <div class="main-feed-tabs">
+            <div class="main-feed-tabs__item main-feed-tabs__item_active">Новости</div>
+            <div class="main-feed-tabs__item">Информация</div>
+            <div class="main-feed-tabs__item">Фото</div>
+            <div class="main-feed-tabs__item">Видео</div>
+            <div class="main-feed-tabs__item">Аудио</div>
+            <div class="main-feed-tabs__item">Фаилы</div>
+            <div class="main-feed-tabs__item">Контакты</div>
+          </div>
+          <div class="main-feed-search">
+            <label class="main-feed-search__label"><i class="fa fa-search"></i>
+              <input class="main-feed-search__input" type="text" placeholder="Поиск">
+            </label>
+            <div class="group-manage">
+              <div class="group-manage__button">Управление группой<i class="fa fa-angle-down"></i></div>
+              <div class="group-manage-wrapper"><a class="group-manage__item" href="#">Выйти из группы</a><a class="group-manage__item" href="#">Пригласить друзей</a><a class="group-manage__item" href="#">Добавить группу в закладки</a><a class="group-manage__item" href="#">Управление группой</a><a class="group-manage__item" href="#">Реклама группы</a><a class="group-manage__item" href="#">Статистика группы</a></div>
+            </div>
+          </div>
+        </div>
+        <main class="center-block">
+          <!--WALL START-->
+          <div class="main-feed">
+            <div class="main-feed-add">
+              <form class="main-feed-form">
+                <label class="main-feed__label">
+                  <textarea class="main-feed__textarea" placeholder="Что у вас нового?"></textarea>
+                </label>
+              </form>
+              <div class="main-feed-buttons"><a class="main-feed-buttons__item main-feed-buttons__item_photo" href="#">Фото</a><a class="main-feed-buttons__item main-feed-buttons__item_video" href="#">Видео</a><a class="main-feed-buttons__item main-feed-buttons__item_music" href="#">Музыка</a><a class="main-feed-buttons__item main-feed-buttons__item_docs" href="#">Документы</a></div>
+              <div class="main-feed-send">
+                <button class="main-feed-send__button">Отослать</button>
+              </div>
+            </div>
+            <div class="main-feed-actions">
+              <div class="main-feed-tabs">
+                <div class="main-feed-tabs__item">Мои новости</div>
+                <div class="main-feed-tabs__item main-feed-tabs__item_active">Всё новости</div>
+                <div class="main-feed-tabs__item">В группах</div>
+              </div>
+              <div class="main-feed-search">
+                <label class="main-feed-search__label"></label>
+                <div class="fa fa-search"></div>
+                <input class="main-feed-search__input" type="text" placeholder="Поиск">
+              </div>
+            </div>
+            <div class="main-feed-wrapper">
+              <div class="main-feed-item">
+                <div class="main-feed-caption clearfix"><img class="main-feed__avatar" src="pictures/user-avatar.jpg" alt="user">
+                  <div class="main-feed__name">Александр Морган</div>
+                  <div class="main-feed__date">12 авг в 1:13</div>
+                  <div class="main-feed-item__actions-button">
+                    <div class="main-feed-item-actions"><a class="main-feed-item-actions__item main-feed-item-actions__item_stick" href="#">Закрепить запись<span class="main-feed-item-actions__icon"></span></a><a class="main-feed-item-actions__item main-feed-item-actions__item_delete" href="#">Удалить запись<span class="main-feed-item-actions__icon"></span></a><a class="main-feed-item-actions__item main-feed-item-actions__item_edit" href="#">Редактировать запись<span class="main-feed-item-actions__icon"></span></a></div>
+                  </div>
+                </div>
+                <div class="main-feed-content">
+                  <h3>Lorem ipsum dolor sit amet.</h3>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad aliquam aperiam atque aut corporis culpa<br>deleniti dolor dolore dolorum ea eius enim esse excepturi facere in minima, minus molestias nam quia						quibusdam, rerum sed sint suscipit tempora unde ut voluptatum? A cumque doloribus error molestias officia						repudiandae sapiente sit vitae? Dignissimos doloribus ex fugiat nesciunt provident reiciendis rerum saepe						sequi?</p>
+                </div>
+                <div class="main-feed-media"><a class="main-feed-media__item" href="#"><img src="pictures/content-1.jpg"></a><a class="main-feed-media__item" href="#" style="background-image:url(pictures/content-2.jpg);"></a><a class="main-feed-media__item" href="#" style="background-image:url(pictures/content-3.jpg);"></a><a class="main-feed-media__item" href="#" style="background-image:url(pictures/content-4.jpg);"></a><a class="main-feed-media__item" href="#" style="background-image:url(pictures/content-4.jpg);"></a></div>
+                <div class="main-feed-bottom">
+                  <div class="main-feed-bottom__item main-feed-bottom__item_comments">Комментировать<span>12</span>
+                    <div class="main-feed-bottom-users-list"><a class="main-feed-bottom-users-list__item" href="#" style="background-image:url(pictures/user-avatar.jpg);"></a><a class="main-feed-bottom-users-list__item" href="#">А</a><a class="main-feed-bottom-users-list__item" href="#" style="background-image:url(pictures/user-avatar.jpg);"></a><a class="main-feed-bottom-users-list__item" href="#">Р</a><a class="main-feed-bottom-users-list__item" href="#">Л</a>
+                      <div class="main-feed-bottom-users-list__add">+5</div>
+                    </div>
+                  </div>
+                  <div class="main-feed-bottom__item main-feed-bottom__item_share"><span>8</span>
+                    <div class="main-feed-bottom-users-list"><a class="main-feed-bottom-users-list__item" href="#" style="background-image:url(pictures/user-avatar.jpg);"></a><a class="main-feed-bottom-users-list__item" href="#">А</a><a class="main-feed-bottom-users-list__item" href="#" style="background-image:url(pictures/user-avatar.jpg);"></a><a class="main-feed-bottom-users-list__item" href="#">Р</a><a class="main-feed-bottom-users-list__item" href="#">Л</a>
+                      <div class="main-feed-bottom-users-list__add">+5</div>
+                    </div>
+                  </div>
+                  <div class="main-feed-bottom__item main-feed-bottom__item_like"><span>54</span>
+                    <div class="main-feed-bottom-users-list"><a class="main-feed-bottom-users-list__item" href="#" style="background-image:url(pictures/user-avatar.jpg);"></a><a class="main-feed-bottom-users-list__item" href="#">А</a><a class="main-feed-bottom-users-list__item" href="#" style="background-image:url(pictures/user-avatar.jpg);"></a><a class="main-feed-bottom-users-list__item" href="#">Р</a><a class="main-feed-bottom-users-list__item" href="#">Л</a>
+                      <div class="main-feed-bottom-users-list__add">+5</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="main-feed-item">
+                <div class="main-feed-caption clearfix"><img class="main-feed__avatar" src="pictures/user-avatar.jpg" alt="user">
+                  <div class="main-feed__name">Александр Морган</div>
+                  <div class="main-feed__date">12 авг в 1:13</div>
+                  <div class="main-feed-item__actions-button">
+                    <div class="main-feed-item-actions"><a class="main-feed-item-actions__item main-feed-item-actions__item_stick" href="#">Закрепить запись<span class="main-feed-item-actions__icon"></span></a><a class="main-feed-item-actions__item main-feed-item-actions__item_delete" href="#">Удалить запись<span class="main-feed-item-actions__icon"></span></a><a class="main-feed-item-actions__item main-feed-item-actions__item_edit" href="#">Редактировать запись<span class="main-feed-item-actions__icon"></span></a></div>
+                  </div>
+                </div>
+                <div class="main-feed-content">
+                  <h3>Lorem ipsum dolor sit amet.</h3>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad aliquam aperiam atque aut corporis culpa<br>deleniti dolor dolore dolorum ea eius enim esse excepturi facere in minima, minus molestias nam quia						quibusdam, rerum sed sint suscipit tempora unde ut voluptatum? A cumque doloribus error molestias officia						repudiandae sapiente sit vitae? Dignissimos doloribus ex fugiat nesciunt provident reiciendis rerum saepe						sequi?</p>
+                </div>
+                <div class="main-feed-media"><a class="main-feed-media__item" href="#"><img src="pictures/content-5.jpg"></a></div>
+                <div class="main-feed-bottom">
+                  <div class="main-feed-bottom__item main-feed-bottom__item_comments">Комментировать<span>12</span>
+                    <div class="main-feed-bottom-users-list"><a class="main-feed-bottom-users-list__item" href="#" style="background-image:url(pictures/user-avatar.jpg);"></a><a class="main-feed-bottom-users-list__item" href="#">А</a><a class="main-feed-bottom-users-list__item" href="#" style="background-image:url(pictures/user-avatar.jpg);"></a><a class="main-feed-bottom-users-list__item" href="#">Р</a><a class="main-feed-bottom-users-list__item" href="#">Л</a>
+                      <div class="main-feed-bottom-users-list__add">+5</div>
+                    </div>
+                  </div>
+                  <div class="main-feed-bottom__item main-feed-bottom__item_share"><span>8</span>
+                    <div class="main-feed-bottom-users-list"><a class="main-feed-bottom-users-list__item" href="#" style="background-image:url(pictures/user-avatar.jpg);"></a><a class="main-feed-bottom-users-list__item" href="#">А</a><a class="main-feed-bottom-users-list__item" href="#" style="background-image:url(pictures/user-avatar.jpg);"></a><a class="main-feed-bottom-users-list__item" href="#">Р</a><a class="main-feed-bottom-users-list__item" href="#">Л</a>
+                      <div class="main-feed-bottom-users-list__add">+5</div>
+                    </div>
+                  </div>
+                  <div class="main-feed-bottom__item main-feed-bottom__item_like"><span>54</span>
+                    <div class="main-feed-bottom-users-list"><a class="main-feed-bottom-users-list__item" href="#" style="background-image:url(pictures/user-avatar.jpg);"></a><a class="main-feed-bottom-users-list__item" href="#">А</a><a class="main-feed-bottom-users-list__item" href="#" style="background-image:url(pictures/user-avatar.jpg);"></a><a class="main-feed-bottom-users-list__item" href="#">Р</a><a class="main-feed-bottom-users-list__item" href="#">Л</a>
+                      <div class="main-feed-bottom-users-list__add">+5</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!--WALL END-->
+        </main>
+        <div class="right-block">
+          <div class="group-users">
+            <div class="group-users__caption">Администраторы<span class="group-users__count">2</span></div>
+            <div class="group-users-wrapper"><a class="group-users-item" href="#"><span class="group-users-item__avatar" style="background-image:url(pictures/user-1.jpg);"></span><span class="group-users-item__name"><span>Андрей</span><span>Федоров</span></span></a><a class="group-users-item" href="#"><span class="group-users-item__avatar" style="background-image:url(pictures/user-2.jpg);"></span><span class="group-users-item__name"><span>Василий</span><span>Пенкин</span></span></a></div>
+            <div class="group-users__caption">Участники<span class="group-users__count">1261</span></div>
+            <div class="group-users-wrapper"><a class="group-users-item" href="#"><span class="group-users-item__avatar" style="background-image:url(pictures/user-3.jpg);"></span><span class="group-users-item__name"><span>Андрей</span><span>Криворогов</span></span></a><a class="group-users-item" href="#"><span class="group-users-item__avatar" style="background-image:url(pictures/user-4.jpg);"></span><span class="group-users-item__name"><span>Василий</span><span>Шилов</span></span></a><a class="group-users-item" href="#"><span class="group-users-item__avatar" style="background-image:url(pictures/user-3.jpg);"></span><span class="group-users-item__name"><span>Андрей</span><span>Криворогов</span></span></a><a class="group-users-item" href="#"><span class="group-users-item__avatar" style="background-image:url(pictures/user-4.jpg);"></span><span class="group-users-item__name"><span>Василий</span><span>Шилов</span></span></a><a class="group-users-item" href="#"><span class="group-users-item__avatar" style="background-image:url(pictures/user-3.jpg);"></span><span class="group-users-item__name"><span>Андрей</span><span>Криворогов</span></span></a><a class="group-users-item" href="#"><span class="group-users-item__avatar" style="background-image:url(pictures/user-4.jpg);"></span><span class="group-users-item__name"><span>Василий</span><span>Шилов</span></span></a><a class="group-users-item" href="#"><span class="group-users-item__avatar" style="background-image:url(pictures/user-3.jpg);"></span><span class="group-users-item__name"><span>Андрей</span><span>Криворогов</span></span></a><a class="group-users-item" href="#"><span class="group-users-item__avatar" style="background-image:url(pictures/user-4.jpg);"></span><span class="group-users-item__name"><span>Василий</span><span>Шилов</span></span></a><a class="group-users-item" href="#"><span class="group-users-item__avatar" style="background-image:url(pictures/user-3.jpg);"></span><span class="group-users-item__name"><span>Андрей</span><span>Криворогов</span></span></a><a class="group-users-item" href="#"><span class="group-users-item__avatar" style="background-image:url(pictures/user-4.jpg);"></span><span class="group-users-item__name"><span>Василий</span><span>Шилов</span></span></a></div><a class="new-users__show-all" href="#">Показать всех</a>
+          </div>
+        </div>
       </div>
     </div>
     <script src="js/libs.js"></script>

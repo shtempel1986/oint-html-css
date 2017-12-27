@@ -1,0 +1,154 @@
+// СТРАНИЦА ГРУППЫ START--------------------------------------------------------------------
+
+.group
+	&-caption
+		display: flex
+		width: 100%
+		padding-top: 15px
+		background: url(../../img/cover-group.jpg) 0 center no-repeat
+		background-size: cover
+		min-height: 200px
+		&-left
+			padding-left: 15px
+			padding-right: 30px
+			font-size: 18px
+			width: 291px
+			flex-shrink: 0
+		&-right
+			padding-right: 30px
+		&__name
+			margin-bottom: 15px
+			font-size: 18px
+			font-weight: 500
+	&-info
+		.fa
+			margin-left: 5px
+			margin-right: 5px
+		&__subject,&__activity
+			color: #263d8b
+			font-family: "Myriad Pro"
+		&__members
+			color: #f3792e
+			font-family: "Myriad Pro"
+	&-nav
+		padding: 0 10px 0 30px
+		width: 100%
+		display: flex
+		border-bottom: 1px solid #e3e3e3
+		justify-content: space-between
+		align-items: center
+		.main-feed-search__label
+			margin-bottom: 0
+		.main-feed-search
+			display: flex
+			align-items: center
+
+.group-manage
+	position: relative
+	margin-left: 10px
+	&__button
+		width: 205px
+		line-height: 32px
+		color: #fff
+		text-align: center
+		font-weight: 300
+		background-color: #263d8b
+		cursor: pointer
+		user-select: none
+		position: relative
+		z-index: 20
+		.fa
+			margin-left: 8px
+			color: #fff
+			margin-right: 0
+		&_active
+			&+.group-manage-wrapper
+				transform: none
+				pointer-events: auto
+				opacity: 1
+				z-index: 30
+	&-wrapper
+		position: absolute
+		top: 110%
+		left: 0
+		width: 100%
+		height: auto
+		border: 1px solid #263d8b
+		border-radius: 4px
+		background-color: #fff
+		pointer-events: none
+		transform: translate(0,-40px)
+		opacity: 0
+		transition-duration: .3s
+		z-index: 10
+	&__item
+		color: #263d8b
+		line-height: 30px
+		display: block
+		font-weight: 300
+		text-align: center
+		width: auto
+		&:not(:last-child)
+			border-bottom: 1px solid #263d8b
+		&:hover,&:focus,&:visited
+			color: #263d8b
+			background-color: #f0f0f0
+			text-decoration: none
+
+.group-users
+	padding: 20px
+	&__caption
+		margin-bottom: 15px
+		font-size: 16px
+		font-weight: 500
+	&__count
+		display: inline-block
+		margin-left: 3px
+		color: #d98c43
+	&-wrapper
+		display: flex
+		flex-wrap: wrap
+		margin-left: -20px
+		margin-right: -20px
+		margin-bottom: 15px
+		padding-left: 20px
+		padding-right: 20px
+		padding-bottom: 10px
+		justify-content: space-between
+		border-bottom: 1px solid #e3e3e3
+	&-item
+		display: inline-block
+		width: 77px
+		text-align: center
+		margin-bottom: 10px
+		&:hover,&visit,&:focus
+			text-decoration: none
+		&__avatar
+			display: inline-block
+			width: 66px
+			height: 66px
+			margin-bottom: 6px
+			-webkit-background-size: cover
+			background-size: cover
+			background-repeat: no-repeat
+			background-position: center
+		&__name
+			font-weight: 500
+			display: block
+			color: #263d8b
+			line-height: 17.5px
+			span
+				display: block
+	.new-users__show-all
+		margin-top: -15px
+		margin-left: -20px
+		margin-right: -20px
+
+.group-right
+	.main-feed
+		border-top: none
+	.right-block
+		width: 204px
+
+
+// СТРАНИЦА ГРУППЫ END----------------------------------------------------------------------

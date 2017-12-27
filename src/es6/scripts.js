@@ -109,6 +109,40 @@ let feedMediaCalculate;
 //	=========================================
 
 
+		//===========================================
+		//	GROUP MANAGE OPEN START
+		//	=========================================
+
+		(function(){
+
+			let $target = $('.group-manage__button');
+
+			$target.click(function () {
+
+				$target.toggleClass('group-manage__button_active');
+
+				if($target.hasClass('group-manage__button_active')){
+					$target.find('.fa').addClass('fa-angle-up').removeClass('fa-angle-down');
+				} else {
+					$target.find('.fa').addClass('fa-angle-down').removeClass('fa-angle-up');
+
+				}
+
+				$('html').click(function (e) {
+					if(!$(e.target).closest('.group-manage').length){
+						$target.removeClass('group-manage__button_active').find('.fa').addClass('fa-angle-down').removeClass('fa-angle-up');
+					}
+				})
+
+			});
+
+		})()
+
+		//===========================================
+		//	GROUP MANAGE OPEN END
+		//	=========================================
+
+
 	});
 
 })(jQuery);

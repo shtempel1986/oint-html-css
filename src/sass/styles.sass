@@ -3,8 +3,12 @@
 	src: url(../fonts/Roboto-Regular.ttf) format("truetype")
 
 @font-face
+	font-family: "Myriad Pro"
+	src: url(../fonts/MyriadPro-Regular.otf) format("truetype")
+
+@font-face
 	font-family: Roboto
-	src: url(../fonts/Roboto-Medium.ttf) format("truetype")
+	src: url(../fonts/Roboto-Medium.ttf) format("opentype")
 	font-weight: 500
 
 @font-face
@@ -64,6 +68,9 @@ a, button
 
 .group-right
 	display: flex
+	flex-wrap: wrap
+	align-items: flex-start
+	align-content: flex-start
 
 @import "components/header-with-user"
 @import "components/menu"
@@ -79,3 +86,4 @@ a, button
 @import "components/friends_filter"
 @import "components/aside_news"
 @import "components/edit"
+@import "components/group"
