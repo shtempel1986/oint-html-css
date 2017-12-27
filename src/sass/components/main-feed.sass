@@ -86,8 +86,13 @@
 			margin-right: 22px
 			cursor: pointer
 			border-bottom: 2px solid transparent
-			&_active
+			color: #333
+			&_active,&.active
 				border-color: #263d8b
+			&:hover,&:focus,&:visited
+				color: #333
+				background-color: #f0f0f0
+				text-decoration: none
 	&-search
 		.fa
 			margin-right: 5px

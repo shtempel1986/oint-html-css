@@ -1,0 +1,74 @@
+.edit
+	&__caption
+		margin-top: 15px
+		margin-bottom: 15px
+		font-size: 16px
+		font-weight: 500
+		color: #333
+	&-tabs
+		margin-bottom: 30px
+	&__label
+		margin-bottom: 10px
+		display: flex
+		align-items: center
+		width: 100%
+		justify-content: space-between
+		font-size: 22px
+		font-weight: 300
+		color: #333
+		position: relative
+	&__input
+		width: 320px
+		background-color: #fff
+		@extend .form-login__input
+	&__textarea
+		@extend .edit__input
+		resize: none
+		height: 150px
+	&-container
+		padding: 20px
+		background-color: #f0f0f0
+		box-shadow: 0 11px 14px 7px #e7e7e7
+	&__photo-picker
+		text-align: center
+		display: block
+		width: 100%
+		font-size: 22px
+		font-weight: 300
+		color: #333
+		input
+			display: none
+		span
+			display: flex
+			justify-content: center
+			align-items: center
+			width: 300px
+			height: 300px
+			margin: 30px auto
+			background-color: #eee
+			background-position: center
+			background-repeat: no-repeat
+			cursor: pointer
+			overflow: hidden
+			img
+				max-width: 100%
+				position: relative
+				z-index: 10
+	&__save
+		height: 30px
+		padding-left: 15px
+		padding-right: 15px
+		background-color: #f3792e
+		border: none
+		color: #fff
+		font-weight: 500
+		-webkit-border-radius: 4px
+		border-radius: 4px
+	&__select
+		@extend .friends-filter__select
+		width: 320px
+		flex-shrink: 0
+		height: 50px
+		.friends-filter__select-arrow
+			top: 10px
+			right: 8px
