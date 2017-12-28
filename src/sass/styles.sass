@@ -1,3 +1,6 @@
+$dark-blue: #192d74
+$orange: #f3792e
+
 @font-face
 	font-family: Roboto
 	src: url(../fonts/Roboto-Regular.ttf) format("truetype")
@@ -32,6 +35,7 @@
 body
 	font-family: Roboto, Arial, sans-serif
 	color: #333
+	background-color: #e3e3e3
 
 label
 	font-weight: normal
@@ -43,11 +47,12 @@ a, button
 	transition-duration: .2s
 
 .wrapper
+	background-color: #fff
 	display: flex
 	width: 1190px
 	margin-left: auto
 	margin-right: auto
-	margin-bottom: 40px
+	padding-bottom: 40px
 .center-block
 	width: 780px
 	padding-left: 18px
@@ -87,3 +92,4 @@ a, button
 @import "components/aside_news"
 @import "components/edit"
 @import "components/group"
+@import "components/ads"

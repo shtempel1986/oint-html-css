@@ -115,7 +115,7 @@ var feedMediaCalculate = void 0;
 
 				(function () {
 
-						var $target = $('.group-manage__button');
+						var $target = $('.group-manage__button, .ads-actions-sort__current');
 
 						$target.click(function () {
 
@@ -128,7 +128,7 @@ var feedMediaCalculate = void 0;
 								}
 
 								$('html').click(function (e) {
-										if (!$(e.target).closest('.group-manage').length) {
+										if (!$(e.target).closest('.group-manage,.ads-actions-sort').length) {
 												$target.removeClass('group-manage__button_active').find('.fa').addClass('fa-angle-down').removeClass('fa-angle-up');
 										}
 								});
@@ -137,6 +137,24 @@ var feedMediaCalculate = void 0;
 
 				//===========================================
 				//	GROUP MANAGE OPEN END
+				//	=========================================
+
+				//===========================================
+				// TOGGLE ADS CATEGORY START
+				//	=========================================
+
+				(function () {
+
+						var $target = $('.ads-menu-category__caption');
+
+						$target.click(function () {
+
+								$(this).siblings('.ads-menu-category-wrapper').stop().slideToggle();
+						});
+				})();
+
+				//===========================================
+				// TOGGLE ADS CATEGORY END
 				//	=========================================
 
 		});
