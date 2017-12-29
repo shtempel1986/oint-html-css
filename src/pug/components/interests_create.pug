@@ -1,0 +1,37 @@
+.interests-create-wrapper
+	.interests-create-container
+		.interests-create__title Создание нового интереса
+			i.fa.fa-times
+		.interests-create__caption Название
+		label.interests-create__label
+			input(type="text").interests-create__input
+		.interests-create__caption Тип интереса
+		.interests-create-croup
+			label.interests-create__checkbox
+				input.hidden(type="radio" name="create-type" checked)
+				i.fa.fa-circle-o
+				| Страница
+				span Подходит для описания, продвижения и информировании
+			label.interests-create__checkbox
+				input.hidden(type="radio" name="create-type")
+				i.fa.fa-circle-o
+				| Запись
+				span Краткое изложение информации
+		.interests-create__caption Определите тип интереса
+		.interests-create-croup
+			label.interests-create__checkbox
+				input.hidden(type="checkbox" checked)
+				i.fa.fa-square
+				| Хобби, увлечение
+			label.interests-create__checkbox
+				input.hidden(type="checkbox")
+				i.fa.fa-square
+				| Навык, умение, компетенция
+		label.interests-create__label.interests-create__label_select
+			select.interests-create__select
+				option Выберите тематику
+				option Theme 1
+			span.friends-filter__select-arrow
+		.interests-create-bottom.text-right
+			a(href="#").interests-create__cancel Отмена
+			a(href="#").interests-create__submit Создать интерес

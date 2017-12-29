@@ -29,13 +29,17 @@
 		border: 1px solid #e3e3e3
 		color: #919191
 		cursor: pointer
+		&::-ms-expand
+			display: none
 		&-arrow
+			display: block
 			position: absolute
 			right: 0
 			top: 0
 			width: 26px
 			height: 30px
 			background: url(../img/menu-icons.png) no-repeat 0 -840px
+			pointer-events: none
 	&-age
 		display: flex
 		&__input
