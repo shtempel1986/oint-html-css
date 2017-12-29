@@ -1,0 +1,16 @@
+extends /layouts
+block title
+	| События
+
+block content
+	include ../components/header-with-user
+	.wrapper
+		.left-block
+			include ../components/ads_menu
+		main.center-block
+			include ../components/ads_region
+			include ../components/ads_interesting
+			include ../components/events_actions
+			include ../components/events_list
+		.right-block
+			include ../components/events_calendar

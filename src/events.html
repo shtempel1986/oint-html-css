@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>События
+    </title>
+    <link href="css/libs.css" rel="stylesheet">
+    <link href="css/styles.css" rel="stylesheet">
+  </head>
+  <body>
+    <!-- Header start-->
+    <header class="header">
+      <div class="header-wrapper"><a class="header__logo" href="#" style="background-image: url(pictures/header__logo.png);"></a>
+        <div class="header-user"><a class="header-user__avatar" style="background-image: url(pictures/user-avatar.jpg);" href="#"><span class="header-user__notice"><i class="fa fa-bell"></i></span></a><a class="header-user__name" href="#">Александр</a><a class="header-user-points" href="#"><span class="header-user-points__count">25</span><span class="header-user-points__span">баллов</span></a></div>
+        <form class="header-search">
+          <label class="header-search__label"><i class="fa fa-search"></i>
+            <input class="header-search__input" type="search" placeholder="Найти интерес" name="search">
+          </label>
+          <button class="header-search__button">Найти</button>
+        </form>
+      </div>
+    </header>
+    <!-- Header 	END-->
+    <div class="wrapper">
+      <div class="left-block">
+        <div class="ads-menu">
+          <div class="ads-menu-category">
+            <div class="ads-menu-category__caption">Обучение</div>
+            <div class="ads-menu-category-wrapper ads-menu-category-wrapper_active"><a class="ads-menu-category__link" href="#">туры</a><a class="ads-menu-category__link" href="#">экскурсии</a><a class="ads-menu-category__link ads-menu-category__link_active" href="#">поездки</a><a class="ads-menu-category__link" href="#">попутчики</a><a class="ads-menu-category__link" href="#">культура</a><a class="ads-menu-category__link ads-menu-category__link_more" href="#">еще<i class="fa fa-angle-down"></i></a></div>
+          </div>
+          <div class="ads-menu-category">
+            <div class="ads-menu-category__caption">Путешествия, туризм</div>
+            <div class="ads-menu-category-wrapper"><a class="ads-menu-category__link" href="#">туры</a><a class="ads-menu-category__link" href="#">экскурсии</a><a class="ads-menu-category__link" href="#">поездки</a><a class="ads-menu-category__link" href="#">попутчики</a><a class="ads-menu-category__link" href="#">культура</a><a class="ads-menu-category__link ads-menu-category__link_more" href="#">еще<i class="fa fa-angle-down"></i></a></div>
+          </div>
+          <div class="ads-menu-category">
+            <div class="ads-menu-category__caption">Культура</div>
+            <div class="ads-menu-category-wrapper"><a class="ads-menu-category__link" href="#">туры</a><a class="ads-menu-category__link" href="#">экскурсии</a><a class="ads-menu-category__link" href="#">поездки</a><a class="ads-menu-category__link" href="#">попутчики</a><a class="ads-menu-category__link" href="#">культура</a><a class="ads-menu-category__link ads-menu-category__link_more" href="#">еще<i class="fa fa-angle-down"></i></a></div>
+          </div>
+          <div class="ads-menu-category">
+            <div class="ads-menu-category__caption">Театр</div>
+            <div class="ads-menu-category-wrapper"><a class="ads-menu-category__link" href="#">туры</a><a class="ads-menu-category__link" href="#">экскурсии</a><a class="ads-menu-category__link" href="#">поездки</a><a class="ads-menu-category__link" href="#">попутчики</a><a class="ads-menu-category__link" href="#">культура</a><a class="ads-menu-category__link ads-menu-category__link_more" href="#">еще<i class="fa fa-angle-down"></i></a></div>
+          </div>
+          <div class="ads-menu-category">
+            <div class="ads-menu-category__caption">Выыставки</div>
+            <div class="ads-menu-category-wrapper"><a class="ads-menu-category__link" href="#">туры</a><a class="ads-menu-category__link" href="#">экскурсии</a><a class="ads-menu-category__link" href="#">поездки</a><a class="ads-menu-category__link" href="#">попутчики</a><a class="ads-menu-category__link" href="#">культура</a><a class="ads-menu-category__link ads-menu-category__link_more" href="#">еще<i class="fa fa-angle-down"></i></a></div>
+          </div>
+          <div class="ads-menu-category">
+            <div class="ads-menu-category__caption">Бизнес</div>
+            <div class="ads-menu-category-wrapper"><a class="ads-menu-category__link" href="#">туры</a><a class="ads-menu-category__link" href="#">экскурсии</a><a class="ads-menu-category__link" href="#">поездки</a><a class="ads-menu-category__link" href="#">попутчики</a><a class="ads-menu-category__link" href="#">культура</a><a class="ads-menu-category__link ads-menu-category__link_more" href="#">еще<i class="fa fa-angle-down"></i></a></div>
+          </div>
+          <div class="ads-menu-category">
+            <div class="ads-menu-category__caption">Спорт</div>
+            <div class="ads-menu-category-wrapper"><a class="ads-menu-category__link" href="#">туры</a><a class="ads-menu-category__link" href="#">экскурсии</a><a class="ads-menu-category__link" href="#">поездки</a><a class="ads-menu-category__link" href="#">попутчики</a><a class="ads-menu-category__link" href="#">культура</a><a class="ads-menu-category__link ads-menu-category__link_more" href="#">еще<i class="fa fa-angle-down"></i></a></div>
+          </div>
+          <div class="ads-menu-category">
+            <div class="ads-menu-category__caption">Здоровье</div>
+            <div class="ads-menu-category-wrapper"><a class="ads-menu-category__link" href="#">туры</a><a class="ads-menu-category__link" href="#">экскурсии</a><a class="ads-menu-category__link" href="#">поездки</a><a class="ads-menu-category__link" href="#">попутчики</a><a class="ads-menu-category__link" href="#">культура</a><a class="ads-menu-category__link ads-menu-category__link_more" href="#">еще<i class="fa fa-angle-down"></i></a></div>
+          </div>
+          <div class="ads-menu-category">
+            <div class="ads-menu-category__caption">Творчество, ремесла</div>
+            <div class="ads-menu-category-wrapper"><a class="ads-menu-category__link" href="#">туры</a><a class="ads-menu-category__link" href="#">экскурсии</a><a class="ads-menu-category__link" href="#">поездки</a><a class="ads-menu-category__link" href="#">попутчики</a><a class="ads-menu-category__link" href="#">культура</a><a class="ads-menu-category__link ads-menu-category__link_more" href="#">еще<i class="fa fa-angle-down"></i></a></div>
+          </div>
+          <div class="ads-menu-category">
+            <div class="ads-menu-category__caption">Развлечения</div>
+            <div class="ads-menu-category-wrapper"><a class="ads-menu-category__link" href="#">туры</a><a class="ads-menu-category__link" href="#">экскурсии</a><a class="ads-menu-category__link" href="#">поездки</a><a class="ads-menu-category__link" href="#">попутчики</a><a class="ads-menu-category__link" href="#">культура</a><a class="ads-menu-category__link ads-menu-category__link_more" href="#">еще<i class="fa fa-angle-down"></i></a></div>
+          </div>
+          <div class="ads-menu-category">
+            <div class="ads-menu-category__caption">Клубы, кафе</div>
+            <div class="ads-menu-category-wrapper"><a class="ads-menu-category__link" href="#">туры</a><a class="ads-menu-category__link" href="#">экскурсии</a><a class="ads-menu-category__link" href="#">поездки</a><a class="ads-menu-category__link" href="#">попутчики</a><a class="ads-menu-category__link" href="#">культура</a><a class="ads-menu-category__link ads-menu-category__link_more" href="#">еще<i class="fa fa-angle-down"></i></a></div>
+          </div>
+          <div class="ads-menu-category">
+            <div class="ads-menu-category__caption">Конкурсы</div>
+            <div class="ads-menu-category-wrapper"><a class="ads-menu-category__link" href="#">туры</a><a class="ads-menu-category__link" href="#">экскурсии</a><a class="ads-menu-category__link" href="#">поездки</a><a class="ads-menu-category__link" href="#">попутчики</a><a class="ads-menu-category__link" href="#">культура</a><a class="ads-menu-category__link ads-menu-category__link_more" href="#">еще<i class="fa fa-angle-down"></i></a></div>
+          </div>
+          <div class="ads-menu-category">
+            <div class="ads-menu-category__caption">Квесты</div>
+            <div class="ads-menu-category-wrapper"><a class="ads-menu-category__link" href="#">туры</a><a class="ads-menu-category__link" href="#">экскурсии</a><a class="ads-menu-category__link" href="#">поездки</a><a class="ads-menu-category__link" href="#">попутчики</a><a class="ads-menu-category__link" href="#">культура</a><a class="ads-menu-category__link ads-menu-category__link_more" href="#">еще<i class="fa fa-angle-down"></i></a></div>
+          </div>
+          <div class="ads-menu-category">
+            <div class="ads-menu-category__caption">Игры</div>
+            <div class="ads-menu-category-wrapper"><a class="ads-menu-category__link" href="#">туры</a><a class="ads-menu-category__link" href="#">экскурсии</a><a class="ads-menu-category__link" href="#">поездки</a><a class="ads-menu-category__link" href="#">попутчики</a><a class="ads-menu-category__link" href="#">культура</a><a class="ads-menu-category__link ads-menu-category__link_more" href="#">еще<i class="fa fa-angle-down"></i></a></div>
+          </div>
+          <div class="ads-menu-category">
+            <div class="ads-menu-category__caption">Фестивали</div>
+            <div class="ads-menu-category-wrapper"><a class="ads-menu-category__link" href="#">туры</a><a class="ads-menu-category__link" href="#">экскурсии</a><a class="ads-menu-category__link" href="#">поездки</a><a class="ads-menu-category__link" href="#">попутчики</a><a class="ads-menu-category__link" href="#">культура</a><a class="ads-menu-category__link ads-menu-category__link_more" href="#">еще<i class="fa fa-angle-down"></i></a></div>
+          </div>
+          <div class="ads-menu-category">
+            <div class="ads-menu-category__caption">Праздники</div>
+            <div class="ads-menu-category-wrapper"><a class="ads-menu-category__link" href="#">туры</a><a class="ads-menu-category__link" href="#">экскурсии</a><a class="ads-menu-category__link" href="#">поездки</a><a class="ads-menu-category__link" href="#">попутчики</a><a class="ads-menu-category__link" href="#">культура</a><a class="ads-menu-category__link ads-menu-category__link_more" href="#">еще<i class="fa fa-angle-down"></i></a></div>
+          </div>
+          <div class="ads-menu-category">
+            <div class="ads-menu-category__caption">Для детей</div>
+            <div class="ads-menu-category-wrapper"><a class="ads-menu-category__link" href="#">туры</a><a class="ads-menu-category__link" href="#">экскурсии</a><a class="ads-menu-category__link" href="#">поездки</a><a class="ads-menu-category__link" href="#">попутчики</a><a class="ads-menu-category__link" href="#">культура</a><a class="ads-menu-category__link ads-menu-category__link_more" href="#">еще<i class="fa fa-angle-down"></i></a></div>
+          </div>
+          <div class="ads-menu-category">
+            <div class="ads-menu-category__caption">Распродажи, акции</div>
+            <div class="ads-menu-category-wrapper"><a class="ads-menu-category__link" href="#">туры</a><a class="ads-menu-category__link" href="#">экскурсии</a><a class="ads-menu-category__link" href="#">поездки</a><a class="ads-menu-category__link" href="#">попутчики</a><a class="ads-menu-category__link" href="#">культура</a><a class="ads-menu-category__link ads-menu-category__link_more" href="#">еще<i class="fa fa-angle-down"></i></a></div>
+          </div>
+          <div class="ads-menu-category__caption ads-menu-category__caption_more">Еще<i class="fa fa-angle-down"></i></div><a class="menu-ads" href="#" style="background-image: url(pictures/banner-left.jpg);"></a>
+          <div class="menu-bottom"><a class="menu-bottom__link" href="#">Реклама</a><a class="menu-bottom__link" href="#">   Правила</a><a class="menu-bottom__link" href="#">Помощь</a><a class="menu-bottom__link" href="#">О ресурсе</a><a class="menu-bottom__link" href="#">Блог</a><a class="menu-bottom__link" href="#">Разработчикам</a></div>
+        </div>
+      </div>
+      <main class="center-block">
+        <div class="ads-region">
+          <div class="ads-region-current">
+            <div class="ads-region__caption">Объявления:</div><a class="ads-region__link" href="#">в Московской обл.</a>
+          </div>
+          <div class="ads-region-choose">
+            <div class="ads-region__caption">выбрать:</div><a class="ads-region__link" href="#">регион</a><a class="ads-region__link" href="#">город</a><a class="ads-region__link" href="#"> все</a>
+          </div>
+        </div>
+        <div class="interesting">
+          <div class="interesting-wrapper"><a class="interesting-item" href="#">
+              <div class="interesting-item__image" style="background-image: url(pictures/interesting-1.jpg);"></div>
+              <div class="interesting-item__text">
+                <p>Путин поручил снизить долги регионов</p>
+              </div></a><a class="interesting-item" href="#">
+              <div class="interesting-item__image" style="background-image: url(pictures/interesting-2.jpg);"></div>
+              <div class="interesting-item__text">
+                <p>Путин поручил снизить долги регионов</p>
+              </div></a><a class="interesting-item" href="#">
+              <div class="interesting-item__image" style="background-image: url(pictures/interesting-3.jpg);"></div>
+              <div class="interesting-item__text">
+                <p>Путин поручил снизить долги регионов</p>
+              </div></a><a class="interesting-item" href="#">
+              <div class="interesting-item__image" style="background-image: url(pictures/interesting-4.jpg);"></div>
+              <div class="interesting-item__text">
+                <p>Путин поручил снизить долги регионов</p>
+              </div></a><a class="interesting-item" href="#">
+              <div class="interesting-item__image" style="background-image: url(pictures/interesting-5.jpg);"></div>
+              <div class="interesting-item__text">
+                <p>Путин поручил снизить долги регионов</p>
+              </div></a><a class="interesting-item" href="#">
+              <div class="interesting-item__image" style="background-image: url(pictures/interesting-6.jpg);"></div>
+              <div class="interesting-item__text">
+                <p>Путин поручил снизить долги регионов</p>
+              </div></a></div>
+        </div>
+        <div class="ads-actions">
+          <div class="main-feed-tabs">
+            <div class="main-feed-tabs__item">Для меня</div>
+            <div class="main-feed-tabs__item">Всё</div>
+            <div class="main-feed-tabs__item main-feed-tabs__item_active">У друзей  </div>
+            <div class="main-feed-tabs__item">В группах</div>
+          </div>
+          <div class="ads-actions-right">
+            <label class="main-feed-search__label"><i class="fa fa-search"></i>
+              <input class="main-feed-search__input" type="text" placeholder="Поиск">
+            </label>
+            <div class="ads-actions__add">Создать<i class="fa fa-angle-down"></i></div>
+          </div><a class="ads-actions__map-link" href="#" style="background-image:url(pictures/map-link-bg.jpg);"><span>Посмотреть на карте</span></a>
+        </div>
+        <div class="events-list">
+          <div class="events-list-item">
+            <div class="events-list-item-top"><a class="events-list-item__name" href="#">Технологии и наука Керчи</a><a class="events-list-item__place" href="#"><i class="fa fa-map-marker"></i>Керчь</a></div><a class="events-list-item__image" href="#" style="background-image:url(pictures/events-1.jpg);"></a>
+            <div class="events-list-item__text">
+              <p>Эти дома построили за 2 часа, и простоят они целых 300 лет. Сегодняшний стремительный ритм жизни диктует свои условия и заставляет всех подстраиваться.</p>
+            </div>
+            <div class="events-list-item-bottom"><span class="events-list-item__date"><i class="fa fa-calendar"></i>12 августа</span><span class="events-list-item__time"><i class="fa fa-clock-o"></i>1:13</span><span class="events-list-item__go-in"><i class="fa fa-slideshare"></i>Участвую</span></div>
+          </div>
+          <div class="events-list-item">
+            <div class="events-list-item-top"><a class="events-list-item__name" href="#">Технологии и наука Керчи</a><a class="events-list-item__place" href="#"><i class="fa fa-map-marker"></i>Керчь</a></div><a class="events-list-item__image" href="#" style="background-image:url(pictures/events-2.jpg);"></a>
+            <div class="events-list-item__text">
+              <p>Эти дома построили за 2 часа, и простоят они целых 300 лет. Сегодняшний стремительный ритм жизни диктует свои условия и заставляет всех подстраиваться.</p>
+            </div>
+            <div class="events-list-item-bottom"><span class="events-list-item__date"><i class="fa fa-calendar"></i>12 августа</span><span class="events-list-item__time"><i class="fa fa-clock-o"></i>1:13</span><span class="events-list-item__go-in"><i class="fa fa-slideshare"></i>Участвую</span></div>
+          </div>
+          <div class="events-list-item">
+            <div class="events-list-item-top"><a class="events-list-item__name" href="#">Технологии и наука Керчи</a><a class="events-list-item__place" href="#"><i class="fa fa-map-marker"></i>Керчь</a></div><a class="events-list-item__image" href="#" style="background-image:url(pictures/events-1.jpg);"></a>
+            <div class="events-list-item__text">
+              <p>Эти дома построили за 2 часа, и простоят они целых 300 лет. Сегодняшний стремительный ритм жизни диктует свои условия и заставляет всех подстраиваться.</p>
+            </div>
+            <div class="events-list-item-bottom"><span class="events-list-item__date"><i class="fa fa-calendar"></i>12 августа</span><span class="events-list-item__time"><i class="fa fa-clock-o"></i>1:13</span><span class="events-list-item__go-in"><i class="fa fa-slideshare"></i>Участвую</span></div>
+          </div>
+          <div class="events-list-item">
+            <div class="events-list-item-top"><a class="events-list-item__name" href="#">Технологии и наука Керчи</a><a class="events-list-item__place" href="#"><i class="fa fa-map-marker"></i>Керчь</a></div><a class="events-list-item__image" href="#" style="background-image:url(pictures/events-2.jpg);"></a>
+            <div class="events-list-item__text">
+              <p>Эти дома построили за 2 часа, и простоят они целых 300 лет. Сегодняшний стремительный ритм жизни диктует свои условия и заставляет всех подстраиваться.</p>
+            </div>
+            <div class="events-list-item-bottom"><span class="events-list-item__date"><i class="fa fa-calendar"></i>12 августа</span><span class="events-list-item__time"><i class="fa fa-clock-o"></i>1:13</span><span class="events-list-item__go-in"><i class="fa fa-slideshare"></i>Участвую</span></div>
+          </div>
+          <div class="events-list-item">
+            <div class="events-list-item-top"><a class="events-list-item__name" href="#">Технологии и наука Керчи</a><a class="events-list-item__place" href="#"><i class="fa fa-map-marker"></i>Керчь</a></div><a class="events-list-item__image" href="#" style="background-image:url(pictures/events-1.jpg);"></a>
+            <div class="events-list-item__text">
+              <p>Эти дома построили за 2 часа, и простоят они целых 300 лет. Сегодняшний стремительный ритм жизни диктует свои условия и заставляет всех подстраиваться.</p>
+            </div>
+            <div class="events-list-item-bottom"><span class="events-list-item__date"><i class="fa fa-calendar"></i>12 августа</span><span class="events-list-item__time"><i class="fa fa-clock-o"></i>1:13</span><span class="events-list-item__go-in"><i class="fa fa-slideshare"></i>Участвую</span></div>
+          </div>
+          <div class="events-list-item">
+            <div class="events-list-item-top"><a class="events-list-item__name" href="#">Технологии и наука Керчи</a><a class="events-list-item__place" href="#"><i class="fa fa-map-marker"></i>Керчь</a></div><a class="events-list-item__image" href="#" style="background-image:url(pictures/events-2.jpg);"></a>
+            <div class="events-list-item__text">
+              <p>Эти дома построили за 2 часа, и простоят они целых 300 лет. Сегодняшний стремительный ритм жизни диктует свои условия и заставляет всех подстраиваться.</p>
+            </div>
+            <div class="events-list-item-bottom"><span class="events-list-item__date"><i class="fa fa-calendar"></i>12 августа</span><span class="events-list-item__time"><i class="fa fa-clock-o"></i>1:13</span><span class="events-list-item__go-in"><i class="fa fa-slideshare"></i>Участвую</span></div>
+          </div>
+        </div>
+      </main>
+      <div class="right-block">
+        <aside class="events-aside">
+          <div class="events-aside__caption">Афиша мероприятий</div>
+          <div class="events-aside-calendar calendar"><a class="calendar__day" href="#">1</a><a class="calendar__day" href="#">2</a><a class="calendar__day" href="#">3</a><a class="calendar__day" href="#">4</a><a class="calendar__day" href="#">5</a><a class="calendar__day" href="#">6</a><a class="calendar__day" href="#">7</a><a class="calendar__day" href="#">8</a><a class="calendar__day" href="#">9</a><a class="calendar__day" href="#">10</a><a class="calendar__day" href="#">11</a><a class="calendar__day" href="#">12</a><a class="calendar__day" href="#">13</a><a class="calendar__day" href="#">14</a><a class="calendar__day" href="#">15</a><a class="calendar__day" href="#">16</a><a class="calendar__day" href="#">17</a><a class="calendar__day" href="#">18</a><a class="calendar__day" href="#">19</a><a class="calendar__day" href="#">20</a><a class="calendar__day" href="#">21</a><a class="calendar__day" href="#">22</a><a class="calendar__day" href="#">23</a><a class="calendar__day" href="#">24</a><a class="calendar__day" href="#">25</a><a class="calendar__day" href="#">26</a><a class="calendar__day" href="#">27</a><a class="calendar__day" href="#">28</a><a class="calendar__day" href="#">29</a><a class="calendar__day calendar__day_active" href="#">30</a><a class="calendar__day calendar__day_other-month" href="#">1</a><a class="calendar__day calendar__day_other-month" href="#">2</a><a class="calendar__day calendar__day_other-month" href="#">3</a><a class="calendar__day calendar__day_other-month" href="#">4</a><a class="calendar__day calendar__day_other-month" href="#">5</a></div>
+          <div class="events-aside-days"><a href="#">Сегодня</a><a href="#">Завтра</a><a href="#">Неделя<i class="fa fa-angle-down"></i></a></div>
+          <div class="events-aside-group"><a class="events-aside__date" href="#">30 Ноября</a><a class="events-aside__link" href="#">Семинар по Йоге пройдет в Москве. Методики Эффективного Развития</a></div>
+          <div class="events-aside-group"><a class="events-aside__date" href="#">31 Ноября</a><a class="events-aside__link" href="#">Сегодня пройдет VII Московский Международный Фестиваль Круг света</a></div>
+          <div class="events-aside-group"><a class="events-aside__date" href="#">1 Декабря</a><a class="events-aside__link" href="#">Семинар по Йоге пройдет в Москве. Методики Эффективного Развития</a></div>
+          <div class="events-aside-group"><a class="events-aside__date" href="#">1 Декабря</a><a class="events-aside__link" href="#">Сегодня пройдет VII Московский Международный Фестиваль Круг света</a></div>
+          <div class="events-aside-group"><a class="events-aside__date" href="#">2 Декабря</a><a class="events-aside__link" href="#">Сегодня пройдет VII Московский Международный Фестиваль Круг света</a></div>
+        </aside>
+      </div>
+    </div>
+    <script src="js/libs.js"></script>
+    <script src="js/scripts.js"></script>
+  </body>
+</html>

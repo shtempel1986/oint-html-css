@@ -1,0 +1,55 @@
+.events-list
+	display: flex
+	flex-wrap: wrap
+	margin-left: -18px
+	margin-right: -18px
+	&-item
+		width: 50%
+		margin-bottom: 15px
+		padding-left: 18px
+		padding-right: 18px
+		padding-bottom: 15px
+		border-bottom: 1px solid #e3e3e3
+		&:nth-child(2n+1)
+			border-right: 1px solid #e3e3e3
+		&-top
+			display: flex
+			margin-top: 15px
+			margin-bottom: 15px
+			justify-content: space-between
+			font-size: 16px
+		&__name
+			font-weight: 500
+			color: #333
+			&:focus,&:hover,&:visited
+				color: #333
+				text-decoration: none
+		&__place
+			font-family: "Myriad Pro", Roboto, Arial, sans-serif
+			color: orange
+			.fa
+				font-size: 18px
+				margin-right: 4px
+			&:focus,&:hover,&:visited
+				color: $orange
+				text-decoration: none
+		&__image
+			height: 215px
+			display: block
+			margin-bottom: 15px
+			background-position: center
+			background-size: cover
+		&__text
+			font-weight: 300
+			font-size: 15px
+			margin-bottom: 15px
+		&-bottom
+			color: #263d8b
+			cursor: default
+			font-weight: 500
+			.fa
+				margin-right: 4px
+		&__time
+			margin-left: 6px
+		&__go-in
+			margin-left: 6px

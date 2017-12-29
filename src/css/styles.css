@@ -503,6 +503,29 @@ a, button {
     .calendar__day_active:hover {
       color: #fff; }
 
+.events-aside-days {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-bottom: 15px;
+  border-bottom: 1px solid #e3e3e3; }
+  .events-aside-days a {
+    font-size: 13px;
+    font-weight: 300;
+    color: #333; }
+  .events-aside-days .fa {
+    margin-left: 3px; }
+
 .new-users__caption {
   margin-top: 15px;
   margin-bottom: 15px;
@@ -1834,6 +1857,8 @@ a, button {
             transition-duration: .2s; }
     .ads-actions__add:hover {
       background-color: #192d74; }
+    .ads-actions__add .fa {
+      margin-left: 4px; }
   .ads-actions__map-link {
     width: -webkit-calc(100% + 36px);
     width: calc(100% + 36px);
@@ -1984,5 +2009,72 @@ input:checked ~ .filter-color__span {
 
 .friends-filter-sex input:checked ~ .fa-circle-o::before {
   content: "\f192"; }
+
+.events-list {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+  margin-left: -18px;
+  margin-right: -18px; }
+  .events-list-item {
+    width: 50%;
+    margin-bottom: 15px;
+    padding-left: 18px;
+    padding-right: 18px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid #e3e3e3; }
+    .events-list-item:nth-child(2n+1) {
+      border-right: 1px solid #e3e3e3; }
+    .events-list-item-top {
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      margin-top: 15px;
+      margin-bottom: 15px;
+      -webkit-box-pack: justify;
+      -webkit-justify-content: space-between;
+          -ms-flex-pack: justify;
+              justify-content: space-between;
+      font-size: 16px; }
+    .events-list-item__name {
+      font-weight: 500;
+      color: #333; }
+      .events-list-item__name:focus, .events-list-item__name:hover, .events-list-item__name:visited {
+        color: #333;
+        text-decoration: none; }
+    .events-list-item__place {
+      font-family: "Myriad Pro", Roboto, Arial, sans-serif;
+      color: orange; }
+      .events-list-item__place .fa {
+        font-size: 18px;
+        margin-right: 4px; }
+      .events-list-item__place:focus, .events-list-item__place:hover, .events-list-item__place:visited {
+        color: #f3792e;
+        text-decoration: none; }
+    .events-list-item__image {
+      height: 215px;
+      display: block;
+      margin-bottom: 15px;
+      background-position: center;
+      background-size: cover; }
+    .events-list-item__text {
+      font-weight: 300;
+      font-size: 15px;
+      margin-bottom: 15px; }
+    .events-list-item-bottom {
+      color: #263d8b;
+      cursor: default;
+      font-weight: 500; }
+      .events-list-item-bottom .fa {
+        margin-right: 4px; }
+    .events-list-item__time {
+      margin-left: 6px; }
+    .events-list-item__go-in {
+      margin-left: 6px; }
 
 /*# sourceMappingURL=maps/styles.css.map */
