@@ -239,3 +239,243 @@
 				padding-left: 6px
 				color: #888
 				font-weight: 300
+
+.interest
+	&-top
+		width: 100%
+	&-left
+		width: 206px
+		border-right: 1px solid #e3e3e3
+	&-right
+		width: 984px
+
+.wrapper-interest
+	flex-wrap: wrap
+
+.interest-caption
+	display: flex
+	background: url(../../img/cover-group.jpg) 0 center #cacaca no-repeat
+	-webkit-background-size: contain
+	background-size: contain
+	min-height: 200px
+	&-left
+		width: 360px
+		padding: 13px 23px
+		flex-shrink: 0
+	&-counts
+		font-size: 18px
+		color: $orange
+		font-weight: 300
+		.fa
+			margin-right: 4px
+			margin-left: 4px
+	&-caption
+		margin-top: 14px
+		margin-bottom: 20px
+		align-items: center
+		display: flex
+		padding-right: 26px
+		justify-content: space-between
+		font-size: 18px
+		font-weight: 500
+	&-info
+		font-weight: 300
+		font-size: 13px
+		color: #888
+		.fa
+			margin-left: 4px
+			margin-right: 4px
+	&__description
+		padding-right: 160px
+		font-size: 15px
+		line-height: 24px
+
+.interest-aside
+	padding-top: 10px
+	&-item
+		display: flex
+		flex-wrap: wrap
+		padding: 15px 22px 5px 25px
+		border-bottom:  1px solid #e3e3e3
+	&__caption
+		width: 100%
+		display: flex
+		justify-content: space-between
+		align-items: center
+		margin-bottom: 15px
+		font-weight: 500
+		font-size: 16px
+		color: #333
+		&:focus,&:hover
+			text-decoration: none
+			color: #333
+	&__count
+		height: 22px
+		flex-shrink: 0
+		padding-left: 4px
+		padding-right: 4px
+		min-width: 22px
+		border-radius: 22px
+		background-color: #e3e3e3
+		line-height: 22px
+		text-align: center
+		color: $orange
+		font-size: 12px
+	&-user
+		display: block
+		width: calc(50% + 10px)
+		margin-bottom: 14px
+		text-align: center
+		&:hover,&:focus
+			text-decoration: none
+		&:nth-child(2n)
+			margin-left: -10px
+		&:nth-child(2n-1)
+			margin-right: -10px
+	&__avatar
+		display: inline-block
+		width: 68px
+		height: 68px
+		background-position: center
+		-webkit-background-size: cover
+		background-size: cover
+	&__name
+		display: block
+		line-height: 17.5px
+		span
+			display: block
+			color: $blue
+			font-weight: 500
+	&-photo-link
+		display: flex
+		width: 100%
+		justify-content: space-between
+		align-items: flex-end
+		height: 100px
+		margin-bottom: 10px
+		background-position: center
+		background-size: cover
+		padding-left: 5px
+		padding-right: 5px
+		padding-bottom: 5px
+		color: #e3e3e3
+		font-weight: 500
+		font-size: 13px
+	&-audio
+		display: flex
+		align-items: center
+		margin-bottom: 14px
+		&:hover,&:focus
+			text-decoration: none
+			background-color: #f0f0f0
+		&__cover
+			display: block
+			float: left
+			width: 50px
+			height: 50px
+			flex-shrink: 0
+			margin-right: 10px
+		span
+			color: #333
+			display: block
+			white-space: nowrap
+		&__artist
+			font-size: 16px
+			font-weight: 500
+	&-doc
+		display: flex
+		color: #333
+		margin-bottom: 15px
+		align-items: center
+		&_word .interest-aside-doc__icon::before
+			content: "\f1c2"
+		&_pdf .interest-aside-doc__icon::before
+			content: "\f1c1"
+		&:hover,&:focus
+			text-decoration: none
+			color: #333
+		&__icon
+			width: 57px
+			font-size: 36px
+			flex-shrink: 0
+			&::before
+				font-family: "FontAwesome"
+				content: "\f15c"
+		&-info
+			span
+				display: block
+		&__type
+			font-size: 16px
+			font-weight: 500
+
+.interest-main
+	&-actions
+		display: flex
+		height: 70px
+		justify-content: space-between
+		align-items: center
+		padding-left: 28px
+		padding-right: 28px
+		background-color: #f0f0f0
+		border-bottom: 1px solid #e3e3e3
+		a
+			color: #333
+			text-decoration: none
+			font-weight: 300
+		.fa
+			margin-right: 4px
+		&-left
+			a
+				display: inline-block
+				margin-right: 28px
+				padding-left: 10px
+				padding-right: 10px
+				line-height: 25px
+				background-color: #e8e8e8
+	&__move
+		.fa
+			margin-left: 4px
+	&-wrapper
+		display: flex
+		flex-wrap: wrap
+	&-item
+		display: block
+		padding-top: 20px
+		padding-bottom: 5px
+		width: 50%
+		border-bottom: 1px solid #e3e3e3
+		&:hover,&:focus
+			text-decoration: none
+		&:nth-child(2n-1)
+			padding-left: 19px
+			padding-right: 16px
+		&:nth-child(2n)
+			padding-left: 16px
+			padding-right: 19px
+		&__caption
+			display: flex
+			justify-content: space-between
+			align-items: center
+			font-size: 18px
+			font-weight: 500
+			color: #333
+		&__count
+			font-weight: 300
+			color: $orange
+			font-family: "Myriad Pro"
+			.fa
+				margin-right: 5px
+		&__info
+			margin-top: 5px
+			margin-bottom: 6px
+			font-size: 13px
+			color: #888
+		&__image
+			height: 300px
+			margin-bottom: 10px
+			background-size: cover
+		&__description
+			color: #333
+			font-size: 15px
+			font-weight: 300
+			line-height: 24px
