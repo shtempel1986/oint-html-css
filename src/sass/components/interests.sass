@@ -115,3 +115,127 @@
 			text-decoration: none
 			background-color: $dark-blue
 			color: #fff
+
+.menu__link
+	&_interest-photo
+		.menu__icon
+			background-position: -13px -39px
+	&_interest-video
+		.menu__icon
+			background-position: -13px -74px
+	&_interest-audio
+		.menu__icon
+			background-position: -13px -108px
+	&_interest-files
+		.menu__icon
+			background-position: -13px -143px
+
+.interest-settings
+	&__title
+		margin-left: -18px
+		margin-right: -18px
+		padding-left: 18px
+		height: 60px
+		line-height: 59px
+		font-weight: 500
+		font-size: 16px
+		border-bottom: 1px solid #e3e3e3
+	&-group
+		margin-top: 25px
+		margin-bottom: 25px
+	&-item
+		display: flex
+		margin-bottom: 18px
+	&__span
+		text-align: right
+		width: 237px
+		margin-right: 13px
+		line-height: 32px
+		font-weight: 500
+		color: #888
+	&__container
+		line-height: 32px
+		position: relative
+		a
+			color: $blue
+			font-weight: 500
+	&__dot
+		display: inline-block
+		color: $blue
+		font-weight: 500
+		margin-left: 4px
+		margin-right: 4px
+		position: relative
+		top: -3px
+	&__input
+		@extend .interests-create__input
+		width: 305px
+		color: #888
+	&__textarea
+		@extend .interest-settings__input
+		min-height: 73px
+		resize: none
+	&__select
+		@extend .interest-settings__input
+		display: block
+		margin-bottom: 10px
+	&-bottom
+		margin-left: -18px
+		margin-right: -18px
+		padding-top: 20px
+		border-top: 1px solid #e3e3e3
+	&__save
+		display: inline-block
+		line-height: 32px
+		background-color: $blue
+		color: #fff
+		font-weight: 500
+		padding-left: 18px
+		padding-right: 18px
+		border-radius: 4px
+		&:hover,&:focus
+			background-color: $dark-blue
+			color: #fff
+			text-decoration: none
+
+.interest-nav
+	&-back
+		height: 60px
+		display: flex
+		padding-left: 22px
+		align-items: center
+		border-bottom: 1px solid #e3e3e3
+		&:hover,&:focus
+			text-decoration: none
+			background-color: #f0f0f0
+		&__img
+			height: 40px
+			width: 40px
+			margin-right: 10px
+			background-position: center
+			background-size: cover
+		&__text
+			font-size: 13px
+			font-weight: 300
+			color: #333
+	&-list
+		margin-top: 10px
+		padding-bottom: 10px
+		border-bottom: 1px solid #e3e3e3
+		a
+			display: block
+			padding-left: 22px
+			line-height: 37px
+			font-weight: 500
+			color: $blue
+			&:hover,&:focus
+				text-decoration: none
+				background-color: #f0f0f0
+		&__inner
+			padding-left: 22px
+			padding-right: 22px
+			a
+				display: block
+				padding-left: 6px
+				color: #888
+				font-weight: 300

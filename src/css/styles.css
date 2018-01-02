@@ -60,21 +60,23 @@ a, button {
   display: flex;
   width: 1190px;
   margin-left: auto;
-  margin-right: auto;
-  padding-bottom: 40px; }
+  margin-right: auto; }
 
 .center-block {
   width: 780px;
   padding-left: 18px;
   padding-right: 18px;
-  border-right: 1px solid #e3e3e3; }
+  border-right: 1px solid #e3e3e3;
+  padding-bottom: 20px; }
 
 .left-block {
   width: 206px;
-  border-right: 1px solid #e3e3e3; }
+  border-right: 1px solid #e3e3e3;
+  padding-bottom: 20px; }
 
 .right-block {
-  width: 206px; }
+  width: 206px;
+  padding-bottom: 20px; }
 
 .main-forms {
   margin-left: -25px; }
@@ -101,6 +103,8 @@ a, button {
 
 .header {
   background-color: #263d8b; }
+  .header_grey {
+    background-color: #cdcdcd; }
   .header-wrapper {
     width: 1190px;
     margin-left: auto;
@@ -2176,7 +2180,7 @@ input:checked ~ .filter-color__span {
     width: 327px;
     margin-bottom: 22px; }
 
-.interests-create__input {
+.interests-create__input, .interest-settings__input, .interest-settings__textarea, .interest-settings__select {
   width: 100%;
   height: 33px;
   line-height: 31px;
@@ -2251,5 +2255,143 @@ input:checked ~ .filter-color__span {
     text-decoration: none;
     background-color: #192d74;
     color: #fff; }
+
+.menu__link_interest-photo .menu__icon {
+  background-position: -13px -39px; }
+
+.menu__link_interest-video .menu__icon {
+  background-position: -13px -74px; }
+
+.menu__link_interest-audio .menu__icon {
+  background-position: -13px -108px; }
+
+.menu__link_interest-files .menu__icon {
+  background-position: -13px -143px; }
+
+.interest-settings__title {
+  margin-left: -18px;
+  margin-right: -18px;
+  padding-left: 18px;
+  height: 60px;
+  line-height: 59px;
+  font-weight: 500;
+  font-size: 16px;
+  border-bottom: 1px solid #e3e3e3; }
+
+.interest-settings-group {
+  margin-top: 25px;
+  margin-bottom: 25px; }
+
+.interest-settings-item {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 18px; }
+
+.interest-settings__span {
+  text-align: right;
+  width: 237px;
+  margin-right: 13px;
+  line-height: 32px;
+  font-weight: 500;
+  color: #888; }
+
+.interest-settings__container {
+  line-height: 32px;
+  position: relative; }
+  .interest-settings__container a {
+    color: #263d8b;
+    font-weight: 500; }
+
+.interest-settings__dot {
+  display: inline-block;
+  color: #263d8b;
+  font-weight: 500;
+  margin-left: 4px;
+  margin-right: 4px;
+  position: relative;
+  top: -3px; }
+
+.interest-settings__input, .interest-settings__textarea, .interest-settings__select {
+  width: 305px;
+  color: #888; }
+
+.interest-settings__textarea {
+  min-height: 73px;
+  resize: none; }
+
+.interest-settings__select {
+  display: block;
+  margin-bottom: 10px; }
+
+.interest-settings-bottom {
+  margin-left: -18px;
+  margin-right: -18px;
+  padding-top: 20px;
+  border-top: 1px solid #e3e3e3; }
+
+.interest-settings__save {
+  display: inline-block;
+  line-height: 32px;
+  background-color: #263d8b;
+  color: #fff;
+  font-weight: 500;
+  padding-left: 18px;
+  padding-right: 18px;
+  -webkit-border-radius: 4px;
+          border-radius: 4px; }
+  .interest-settings__save:hover, .interest-settings__save:focus {
+    background-color: #192d74;
+    color: #fff;
+    text-decoration: none; }
+
+.interest-nav-back {
+  height: 60px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  padding-left: 22px;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-bottom: 1px solid #e3e3e3; }
+  .interest-nav-back:hover, .interest-nav-back:focus {
+    text-decoration: none;
+    background-color: #f0f0f0; }
+  .interest-nav-back__img {
+    height: 40px;
+    width: 40px;
+    margin-right: 10px;
+    background-position: center;
+    background-size: cover; }
+  .interest-nav-back__text {
+    font-size: 13px;
+    font-weight: 300;
+    color: #333; }
+
+.interest-nav-list {
+  margin-top: 10px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #e3e3e3; }
+  .interest-nav-list a {
+    display: block;
+    padding-left: 22px;
+    line-height: 37px;
+    font-weight: 500;
+    color: #263d8b; }
+    .interest-nav-list a:hover, .interest-nav-list a:focus {
+      text-decoration: none;
+      background-color: #f0f0f0; }
+  .interest-nav-list__inner {
+    padding-left: 22px;
+    padding-right: 22px; }
+    .interest-nav-list__inner a {
+      display: block;
+      padding-left: 6px;
+      color: #888;
+      font-weight: 300; }
 
 /*# sourceMappingURL=maps/styles.css.map */

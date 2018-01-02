@@ -1,0 +1,42 @@
+.interest-settings
+	.interest-settings__title Настройки
+	.interest-settings-group
+		label.interest-settings-item
+			span.interest-settings__span Название:
+			span.interest-settings__container
+				input.interest-settings__input
+		label.interest-settings-item
+			span.interest-settings__span Описание интереса:
+			span.interest-settings__container
+				textarea.interest-settings__textarea
+	.interest-settings-group
+		.interest-settings-item
+			span.interest-settings__span Тип интереса:
+			span.interest-settings__container
+				a(href="#") Открытый
+		.interest-settings-item
+			span.interest-settings__span Обложка интереса:
+			span.interest-settings__container
+				a(href="#") Загрузить
+				span.interest-settings__dot .
+				a(href="#") Удалить
+	.interest-settings-group
+		label.interest-settings-item
+			span.interest-settings__span Адрес страницы:
+			span.interest-settings__container
+				input(value="https://ointeres.ru/").interest-settings__input
+	.interest-settings-group
+		label.interest-settings-item
+			span.interest-settings__span Тематика интереса:
+			span.interest-settings__container
+				select.interest-settings__select
+					option Выбрать
+					option Тематика 1
+				span.friends-filter__select-arrow
+				a(href="#") Указать возрастные ограничения
+		.interest-settings-item
+			span.interest-settings__span Местоположение:
+			span.interest-settings__container
+				a(href="#") Москва
+	.interest-settings-bottom.text-center
+		a(href="#").interest-settings__save Сохранить
